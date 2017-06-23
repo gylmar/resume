@@ -2,8 +2,8 @@
 \usepackage{hyperref}
 \usepackage{amsmath}
 \usepackage[
-    top = 1.5cm,
-    bottom = 1.5cm,
+    top = 1.0cm,
+    bottom = 1.0cm,
     left = 1.0cm,
     right = 1.0cm]{geometry}
 \pagestyle{empty}
@@ -19,30 +19,26 @@
     \end{center}
 
     \begin{description}
-        \item[\underline{CAREER OBJECTIVE}] \hfill
-            \begin{flushleft}
-                Update and manage a large scale distributed production system. Improve my Operating System and Networking skills while developing 
-                my existing Software Engineering skillset.
-            \end{flushleft}
+        \item[\underline{OBJECTIVE}] Help people better understand and reason through their data. Produce algorithms and code that elegantly manage a large scale production systems that share this mission.
+            \iffalse\begin{flushleft} Update and manage a large scale distributed production system.  \end{flushleft} \fi
+            \iffalse Produce algorithms and code that elegantly manage a large scale production system that\fi
         \item[\underline{WORK EXPERIENCE}] \hfill
             \begin{description}
-                \item[RetailOps - Software Engineer] \hfill \textbf{2014-2016}
-                    \begin{flushleft}
-                        Full-stack projects running on a custom, low-latency microservice architecture.
-                        The application revolves around user-facing warehouse operations: catalog, order and shipment management, etc.
-                    \end{flushleft}
-
+                \item[RetailOps - Software Engineer] \hfill \textbf{2014-2016}\\
                     \begin{tabular}{l|l}
-                        Javascript & Data import tool UI with grid and template support on columns\\
-                                   & Iterative modification and improvements to front-end based on user stories\\
+                        (Summary)  & Full-stack projects running on a custom, low-latency microservice architecture.\\
+                                   & Integrations between RetailOps and other management applications \\
+                                   & Required picking up domain knowledge to meet task requirements\\
+                                     \\
+                        Javascript & Iterative modification and improvements to front-end based on user stories\\
+                                   & Controller and View implementation for new Models designed at the database-layer\\
                                      \\
                         NodeJS     & Wrote proxy media server to reduce media requests from main servers \\
                                    & Stored files in server and returned unique media IDs for eventual URL generation\\
                                      \\
                         Perl   & Extended large backend application using in-house API \\
                                    & Design and extension of ORM models for use in application business logic \\
-                                   & Responsible for integrations between external APIs and our own company software \\
-                                   & Applied Elasticsearch library to make search queries efficient and informative\\
+                                   & Using ElasticSearch library to make search queries more informative\\
                                      \\
                         VIM/Excel  & Developed client implementation process for catalog data conversion\\
                                    & Powerful macros, regular expressions and templating to munge client data\\
@@ -51,15 +47,10 @@
                         MySQL      & Creation and extension of raw data models used in backend code and client reports\\
                                      \\
                         Unix/Bash  & Remote machine work in dev setup and job execution in Docker containers\\
+                                   & Identifying and automating repetitive tasks
                     \end{tabular}
 
             \end{description}
-
-        \item[\underline{EDUCATION}]  \hfill \\
-            \begin{tabular}{l|l}
-                University of California, San Diego & B.S. Computer Science - Mathematics \\
-                \hfill Class of 2013 - GPA 3.211    & B.S. Cognitive Science (Computation Specialization)\\
-            \end{tabular}
 
         \item[\underline{SKILLS \& QUALIFICATIONS}] \hfill \\
             \begin{tabular}{l|l}
@@ -72,12 +63,12 @@
                 Paradigms&
                     Object Oriented Programming
                     \textbullet ~ Functional Programming
-                    \textbullet ~ RegEx
+                    \textbullet ~ Regular Expressions (RegEx)
                     \\
                Math&
-                    Numerical Analysis
+                    Algorithm Design
+                    \textbullet ~ Numerical Analysis
                     \textbullet ~ Machine Learning
-                    \textbullet ~ Graph Theory
                     \textbullet ~ Data Visualization
                     \\
                 Tools&
@@ -90,26 +81,26 @@
                     \\
             \end{tabular}
 
+        \item[\underline{EDUCATION}]  \hfill \\
+            \begin{tabular}{l|l}
+                University of California, San Diego & B.S. Computer Science - Mathematics \\
+                \hfill Class of 2013 - GPA 3.211    & B.S. Cognitive Science (Computation Specialization)\\
+            \end{tabular}
+
+
+        \item[\underline{MATH PROJECTS}] \hfill \\
+            \begin{tabular}{l|l}
+                Web Visualization& Dynamic vector representation of a 4.5GB network node file\\
+                                 & Altered a BFS implementation to consider "time visited" in presentation\\
+                                 \\
+                OCaml Interpreter& Capable of function declarations and compositions \\
+                                 & Functional, recursive approach to breaking down language \\
+                                 \\
+                Face Detection   & Wrote Matlab code to train and detect faces using Principal Component Analysis\\
+
+            \end{tabular}
+
         \iffalse
-        \item[\underline{PROJECTS}] \hfill
-            \begin{description}
-            \item[Internet Visualization] \hfill \\
-                \textbullet ~ Dynamic vector representation of a 4.5GB network node file centered around a
-                node of the user's choice.
-
-                \textbullet ~ Altered the standard BFS implementation to consider time visited when
-                organizing the data for presentation.
-
-            \item[File Compressor] \hfill \\
-                \textbullet ~ Wrote binary trie and priority queue for use with the program's Huffman Algorithm implementation.
-
-                \textbullet ~ Wrote substantive tests for each data
-                    structure to speed up algorithm execution and manage memory efficiently.
-
-                \textbullet ~ Two separate implementatons in {\bf C++} and {\bf Perl}.
-
-            \end{description}
-
         \item[\underline{RELEVANT COURSEWORK}]\hfill
 
             \begin{tabular}{l|l|l}
@@ -150,9 +141,9 @@
                         \\
                 \end{tabular}
             \fi
-
         \fi
 
+        \iffalse
         \item[\underline{LEADERSHIP EXPERIENCE}] \hfill
             \begin{description}
                 \item[Sailing Captain] \textbullet ~ Organization/facilitation of sailing events in San Diego Mission Bay \hfill \textbf{2014-Present}
@@ -160,6 +151,7 @@
                     \textbullet ~ Intro to Computer Science (Java) and Machine Learning (Matlab)    \hfill \textbf{2012-2013}
                 \item[TV Producer] \textbullet ~ Lead month-long video projects with teams of three to four people \hfill \textbf{2010-2013}
             \end{description}
+        \fi
 
         \item[\underline{EXTRACURRICULAR}] -
             \begin{tabular}{l|l|l}
