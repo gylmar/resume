@@ -1,0 +1,8 @@
+\begin{document}
+Hello,
+   I am Gylmar from SoCal! I have ~3 years of experience in full stack development from my last employer, Retailops, where I focused on projects in the warehouse automation space. We mainly used an Object-Oriented Perl backend (using the Moose object library) and a Javascript frontend (ExtJS). I designed Mysql database models (MariaDB) and wrapped them in code on the backend until I eventually displayed it on the frontend. I also took a dive into NodeJS when I implemented a media server as a means of reducing system load on our main service.
+
+   All the edge cases I've handled relating to Perl's loose typing combined with my education in strongly typed languages (C, Java) offer me enough general language insight to dive right into a large Python application. My general Linux knowledge has served me greatly in discovering how a system works in production regardless of the language. I have a strong background in Mathematics so I prefer to have clarity on my assumptions before diving into any project, for the sake of team sanity. Overall I find myself to be a good candidate for this role and I hope this letter reaches the reader well - please feel free to contact me for any clarity on my credentials.
+
+-Gylmar
+\end{document}
