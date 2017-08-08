@@ -1,0 +1,68 @@
+Gylmar Alexander Moreno
+(323)868-6980
+gylmar.a.moreno@gmail.com
+
+Objective: Update and manage a large scale distributed production system.
+Improve my Operating System and Networking skills while developing 
+my existing Software Engineering skillset.
+
+Experience:
+RetailOps - Software Engineer (2014-2016)
+    Summary: Full-stack projects running on a custom, low-latency microservice architecture. 
+    Management and development of integrations relating to application software operations.
+    The application itself revolves around user-facing warehouse operations: catalog, order and shipment management, etc.
+
+        Javascript | Data import tool UI with grid and template support on columns
+                   | Iterative modification and improvements to front-end based on user stories
+                   | Controller and View implementaion of Models designed at the database-layer
+
+        NodeJS     | Wrote proxy media server to reduce media requests from main servers 
+                   | Stored files in server and returned unique media IDs for eventual URL generation
+
+        Perl       | Extended large backend application using in-house API 
+                   | Design and extension of ORM models for use in application business logic 
+                   | Responsible for integrations between external APIs and our own company software 
+                   | Applied Elasticsearch library to make search queries efficient and informative
+
+        VIM/Excel  | Developed client implementation process for catalog data conversion
+                   | Powerful macros, regular expressions and templating to munge client data
+                   | Analysis of data across multiple sources for efficient client implementation
+
+        MySQL      | Creation and extension of raw data models used in backend code and client reports
+
+        Unix/Bash  | Remote machine work in dev setup and job execution in Docker containers
+
+Education:
+University of California, San Diego
+Class of 2013 - GPA 3.211
+    | B.S. Computer Science - Mathematics
+    | B.S. Cognitive Science (Computation Specialization)
+
+Skills and Qualifications:
+Languages | C++ ~ C ~ Java ~ Javascript ~ Perl ~ Python ~ Matlab ~ Spanish (Native Bilingual)
+Paradigms | Object Oriented Programming  ~ Functional Programming  ~ RegEx
+Math      | Numerical Analysis ~ Machine Learning ~ Graph Theory ~ Data Visualization
+Tools     | Linux ~ Docker ~ LATEX ~ GIT ~ VIM ~ TMUX
+
+
+Coursework:
+Advanced Data Structures (C++)
+Algorithm Design & Analysis
+Systems Programming (C, Assembly)
+Software Engineering (Java, UML)
+Linear Algebra (LATEX)
+Data Analysis & Modeling (Matlab)
+Operating System Principles (C)
+Machine Learning (Matlab)
+Programming Languages & Paradigms
+
+
+Leadership:
+Sailing Captain (2014-Present) ~ Organization/facilitation of sailing events in San Diego Mission Bay
+UCSD Course TA  (2012-2013)    ~ Intro to Computer Science (Java) and Machine Learning (Matlab)
+TV Producer     (2010-2013)    ~ Lead month-long video projects with teams of three to four people
+
+Extracurricular:
+    Sailboat Cruising 
+    Latin Dancing 
+    Landscape and Portrait Photography
