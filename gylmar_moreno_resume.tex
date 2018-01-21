@@ -5,13 +5,15 @@
     top = 1.0cm,
     bottom = 1.0cm,
     left = 1.0cm,
-    right = 1.0cm]{geometry}
+    right = 1.0cm
+]{geometry}
 \pagestyle{empty}
+\renewcommand{\arraystretch}{.9}
 
 \begin{document}
     \begin{center}
         {\LARGE Gylmar Alexander Moreno}
-        \\
+	\\
         \begin{tabular}{l|l|l}
             Southern California & (323) 868-6980 &
             \href{mailto:gylmar.a.moreno@gmail.com}{gylmar.a.moreno@gmail.com}
@@ -19,80 +21,93 @@
     \end{center}
 
     \begin{description}
-        \item[\underline{OBJECTIVE}] Help people better understand and reason through their data. Produce algorithms and code that elegantly manage a large scale production systems that share this mission.
-            \iffalse\begin{flushleft} Update and manage a large scale distributed production system.  \end{flushleft} \fi
+        \item[\underline{OBJECTIVE}] Produce algorithms and code that elegantly manage a large scale production system.
             \iffalse Produce algorithms and code that elegantly manage a large scale production system that\fi
         \item[\underline{WORK EXPERIENCE}] \hfill
             \begin{description}
-                \item[RetailOps - Software Engineer] \hfill \textbf{2014-2016}\\
+                \item[SPAWAR/SAIC] \hfill \textbf{2017-2018}\\
                     \begin{tabular}{l|l}
-                        (Summary)  & Full-stack projects running on a custom, low-latency microservice architecture.\\
-                                   & Integrations between RetailOps and other management applications \\
-                                   & Required picking up domain knowledge to meet task requirements\\
-                                     \\
-                        Javascript & Iterative modification and improvements to front-end based on user stories\\
-                                   & Controller and View implementation for new Models designed at the database-layer\\
-                                     \\
-                        NodeJS     & Wrote proxy media server to reduce media requests from main servers \\
-                                   & Stored files in server and returned unique media IDs for eventual URL generation\\
-                                     \\
-                        Perl   & Extended large backend application using in-house API \\
-                                   & Design and extension of ORM models for use in application business logic \\
-                                   & Using ElasticSearch library to make search queries more informative\\
-                                     \\
-                        VIM/Excel  & Developed client implementation process for catalog data conversion\\
-                                   & Powerful macros, regular expressions and templating to munge client data\\
-                                   & Analysis of data across multiple sources for efficient client implementation\\
-                                     \\
-                        MySQL      & Creation and extension of raw data models used in backend code and client reports\\
-                                     \\
-                        Unix/Bash  & Remote machine work in dev setup and job execution in Docker containers\\
-                                   & Identifying and automating repetitive tasks
+			(Summary)  & Deployment Process Engineering, moving a manual process to an automated space\\
+				    \\[-1.7mm]
+			Virtualize & Using VMWare to launch minimal RedHat machines in a local lab network\\
+				   & Reducing the service deployment process while preserving software architecture\\
+				   & Test local services by splicing them into functional machine network\\
+				    \\[-1.7mm]
+			Network	   & Designed dynamic proxy configuration for new machines\\
+				   & Configured firewalls to reflect application ports\\
+				    \\[-1.7mm]
+			Scale	   & Ansible script components written to be reusable up to a common-setup\\
+				   & Designed with production and development environments in mind\\
+				    \\[-1.7mm]
                     \end{tabular}
 
-                \item[Wotio - ETL Pipeline Project] \hfill \textbf{July 2017}\\
+                \item[Wotio] \hfill \textbf{2017}\\
                     \begin{tabular}{l|l}
-                        (Summary) & Establish data pipeline to migrate Wotio service data to a Postgres database\\
-                                    \\
+                        (Summary) & ETL Pipeline Project, migrating Wotio service data to a Postgres database\\
+				\\[-1.7mm]
                         Python    & Built service to consume data from Wotio service and push to a Kafka topic\\
                                   & Built service to consume data from Kafka topic and store to Postgres database\\
-                                    \\
-                        Postgres  & Programmatically declare and maintain database state using Alembic library in Python\\
-                                    \\
+				\\[-1.7mm]
+                        Postgres  & Designed database schema to fit subset of the 100+ Wotio data parameters\\
+				  & Database schema easily expandable using Alembic library in Python\\
+				\\[-1.7mm]
                         NodeJS    & Generated fake-data to test service using client-provided JSON schema\\
-                                    \\
-                        Docker    & Build images for each component of the pipeline\\
-                                  & Container management handled by Kubernetes service\\
+				\\[-1.7mm]
+                        Kubernetes& Automatic deployment of Docker images for each component of the pipeline\\
+                    \end{tabular}
+
+                \item[RetailOps] \hfill \textbf{2014-2016}\\
+                    \begin{tabular}{l|l}
+                        (Summary)  & Full-stack projects and integrations running on a low-latency microservice architecture\\
+				\\[-1.7mm]
+                        Javascript & Wrote proxy media server in NodeJS, to reduce media requests from main servers \\
+				   & Front-end application developed in ExtJS, a javascript framework\\
+				\\[-1.7mm]
+                        Perl       & Extended large backend application using in-house API \\
+                                   & Design and extension of ORM models for use in application business logic \\
+                                   & Using ElasticSearch library to make search queries more informative\\
+				\\[-1.7mm]
+                        Data       & Developed client implementation process for catalog data conversion\\
+                                   & Powerful macros, regular expressions and templating to munge client data\\
+                                   & Analysis of data across multiple sources for efficient client implementation\\
+				\\[-1.7mm]
+                        MySQL      & Creation and extension of raw data models used in backend code and client reports\\
                     \end{tabular}
             \end{description}
 
         \item[\underline{SKILLS \& QUALIFICATIONS}] \hfill \\
             \begin{tabular}{l|l}
-                Languages&
-                    C++ \textbullet ~ C \textbullet ~ Java
+                Skills&
+                    Linux-fu
+                    \textbullet ~ Google-fu
+                    \textbullet ~ Object-Oriented Thinking
+					\\
+                \iffalse
+		Languages&
+                    C++
+		    \textbullet ~ C
+		    \textbullet ~ Java
                     \textbullet ~ Javascript
-                    \textbullet ~ Perl \textbullet ~ Python
-                    \textbullet ~ Matlab \textbullet ~ Spanish (Native Bilingual)
-                    \\
-                Paradigms&
-                    Object Oriented Programming
-                    \textbullet ~ Functional Programming
-                    \textbullet ~ Regular Expressions (RegEx)
-                    \\
-               Math&
+                    \textbullet ~ Perl
+		    \textbullet ~ Python
+                    \textbullet ~ Matlab
+		    \textbullet ~ Spanish
+					\\
+	       \fi
+                Tools&
+                    Linux
+                    \textbullet ~ GIT
+                    \textbullet ~ VIM
+                    \textbullet ~ TMUX
+                    \textbullet ~ VMWare/VirtualBox
+                    \textbullet ~ Kubernetes/Docker
+					\\
+               Math &
                     Algorithm Design
                     \textbullet ~ Numerical Analysis
                     \textbullet ~ Machine Learning
                     \textbullet ~ Data Visualization
-                    \\
-                Tools&
-                    Linux
-                    \textbullet ~Docker
-                    \textbullet ~LATEX
-                    \textbullet ~GIT
-                    \textbullet ~VIM
-                    \textbullet ~TMUX
-                    \\
+					\\
             \end{tabular}
 
         \item[\underline{EDUCATION}]  \hfill \\
@@ -102,19 +117,19 @@
             \end{tabular}
 
 
+	\iffalse
         \item[\underline{MATH PROJECTS}] \hfill \\
             \begin{tabular}{l|l}
                 Web Visualization& Dynamic vector representation of a 4.5GB network node file\\
                                  & Altered a BFS implementation to consider "time visited" in presentation\\
-                                 \\
+					\\
                 OCaml Interpreter& Capable of function declarations and compositions \\
                                  & Functional, recursive approach to breaking down language \\
-                                 \\
+					\\
                 Face Detection   & Wrote Matlab code to train and detect faces using Principal Component Analysis\\
 
             \end{tabular}
 
-        \iffalse
         \item[\underline{RELEVANT COURSEWORK}]\hfill
 
             \begin{tabular}{l|l|l}
@@ -152,7 +167,7 @@
                         HTTP~ \textbullet ~ State Management~ \textbullet ~ Databases\\
                     Mathematics&
                         Numerical Analysis~ \textbullet~  Probability~ \textbullet ~ Combinatorics~ \textbullet ~ Graph Theory
-                        \\
+		\\[-1.7mm]
                 \end{tabular}
             \fi
         \fi
