@@ -8,7 +8,7 @@
     right = 1.0cm
 ]{geometry}
 \pagestyle{empty}
-\renewcommand{\arraystretch}{.9}
+\renewcommand{\arraystretch}{1.0}
 
 \begin{document}
     \begin{center}
@@ -29,49 +29,46 @@
                     \begin{tabular}{l|l}
 			(Summary)  & Deployment Process Engineering, moving a manual process to an automated space\\
 				    \\[-1.7mm]
-			Virtualize & Using VMWare to launch minimal RedHat machines in a local lab network\\
-				   & Reducing the service deployment process while preserving software architecture\\
-				   & Test local services by splicing them into functional machine network\\
+			Virtualize & Using \textit{VMWare} to launch minimal \textit{RedHat} machines in a local lab network\\
+				   & Reducing the service deployment process and \textit{preserving software architecture}\\
+				   & Test local services by splicing them into a functional machine network\\
 				    \\[-1.7mm]
-			Network	   & Designed dynamic proxy configuration for new machines\\
-				   & Configured firewalls to reflect application ports\\
+			Network	   & Designed \textit{dynamic configuration} for a proxy to route to new machines\\
+				   & Configured firewalls rules to reflect application ports and disallow pings for security\\
 				    \\[-1.7mm]
-			Scale	   & Ansible script components written to be reusable up to a common-setup\\
-				   & Designed with production and development environments in mind\\
-				    \\[-1.7mm]
+			Scale	   & \textit{Ansible} script components written to be \textit{reusable} up to a common-setup\\
+				   & Designed with \textit{production} and \textit{development} environments in mind\\
                     \end{tabular}
 
                 \item[Wotio] \hfill \textbf{2017}\\
                     \begin{tabular}{l|l}
-                        (Summary) & ETL Pipeline Project, migrating Wotio service data to a Postgres database\\
+                        (Summary) & ETL Pipeline Project, migrating Wotio service data to a \textit{Postgres} database\\
 				\\[-1.7mm]
-                        Python    & Built service to consume data from Wotio service and push to a Kafka topic\\
-                                  & Built service to consume data from Kafka topic and store to Postgres database\\
+                        Ingestion & Built service to consume data from Wotio api and push to a \textit{Kafka} topic\\
+                                  & Built service to consume data from \textit{Kafka} topic and store to \textit{Postgres} database\\
 				\\[-1.7mm]
-                        Postgres  & Designed database schema to fit subset of the 100+ Wotio data parameters\\
-				  & Database schema easily expandable using Alembic library in Python\\
+                        Schemas   & Designed \textit{database} schema to fit subset of the 100+ Wotio data parameters\\
+				  & Database schema easily \textit{extendable} using Alembic library in \textit{Python}\\
 				\\[-1.7mm]
-                        NodeJS    & Generated fake-data to test service using client-provided JSON schema\\
+                        Deployment& \textit{Kubernetes} deployment of \textit{Docker} images for each component of the pipeline\\
 				\\[-1.7mm]
-                        Kubernetes& Automatic deployment of Docker images for each component of the pipeline\\
+                        Testing   & Built \textit{NodeJS} service to generate fake-data using client-provided \textit{JSON} schema\\
                     \end{tabular}
 
                 \item[RetailOps] \hfill \textbf{2014-2016}\\
                     \begin{tabular}{l|l}
-                        (Summary)  & Full-stack projects and integrations running on a low-latency microservice architecture\\
+                        (Summary)  & Full-stack projects, and integrations running on a low-latency microservice architecture\\
 				\\[-1.7mm]
-                        Javascript & Wrote proxy media server in NodeJS, to reduce media requests from main servers \\
-				   & Front-end application developed in ExtJS, a javascript framework\\
+                        Javascript & Wrote proxy media server in \textit{NodeJS} so that media request would \textit{bypass} main servers \\
+				   & Front-end application developed in \textit{ExtJS}, a Javascript framework\\
 				\\[-1.7mm]
-                        Perl       & Extended large backend application using in-house API \\
-                                   & Design and extension of ORM models for use in application business logic \\
-                                   & Using ElasticSearch library to make search queries more informative\\
+                        Backend    & Extended large backend application using \textit{in-house} Perl API \\
+                                   & Design and extension of \textit{ORM} models for use in application business logic \\
+                                   & Using \textit{ElasticSearch} library to make search queries more informative\\
 				\\[-1.7mm]
-                        Data       & Developed client implementation process for catalog data conversion\\
-                                   & Powerful macros, regular expressions and templating to munge client data\\
-                                   & Analysis of data across multiple sources for efficient client implementation\\
-				\\[-1.7mm]
-                        MySQL      & Creation and extension of raw data models used in backend code and client reports\\
+                        Data       & Creation and extension of MySQL schemas used by backend code and client reports\\
+                                   & Powerful macros, regular expressions and templating to \textit{munge} client data\\
+                        	   & Developed client \textit{implementation process} for catalog data conversion\\
                     \end{tabular}
             \end{description}
 
