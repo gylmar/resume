@@ -11,6 +11,8 @@
 \renewcommand{\arraystretch}{1.0}
 \renewcommand{\familydefault}{\sfdefault}
 
+\usepackage[usenames, dvipsnames]{xcolor}
+
 \begin{document}
     \begin{center}
         {\LARGE Gylmar Alexander Moreno}
@@ -29,46 +31,47 @@
                 \item[SPAWAR/SAIC - Deployment Process Engineering] \hfill \textbf{2017-2018}\\
                     \begin{tabular}{l|l}
 				    \\[-1.0mm]
-			Virtualize & Using \textit{VMWare} to launch minimal \textit{RedHat} machines in a local lab network\\
-				   & Reducing the service deployment process and \textit{preserving software architecture}\\
+\iffalse \textcolor{gray}{\textcolor{gray}{\textit{VMWare}}} \fi
+			Virtualize & Using \textcolor{gray}{\textit{VMWare}} to launch minimal \textcolor{gray}{\textit{RedHat}} machines in a local lab network\\
+				   & Reducing the service deployment process and \textcolor{gray}{\textit{preserving software architecture}}\\
 				   & Test local services by splicing them into a functional machine network\\
 				    \\[-1.7mm]
-			Network	   & Designed \textit{dynamic configuration} for a proxy to route to new machines\\
+			Network	   & Designed \textcolor{gray}{\textit{dynamic configuration}} for a proxy to route to new machines\\
 				   & Configured firewalls rules to reflect application ports and disallow pings for security\\
 				    \\[-1.7mm]
-			Scale	   & \textit{Ansible} script components written to be \textit{reusable} up to a common-setup\\
-				   & Designed with \textit{production} and \textit{development} environments in mind\\
+			Scale	   & \textcolor{gray}{\textit{Ansible}} script components written to be \textcolor{gray}{\textit{reusable}} up to a common-setup\\
+				   & Designed with \textcolor{gray}{\textit{production}} and \textcolor{gray}{\textit{development}} environments in mind\\
 				    \\[-1.0mm]
                     \end{tabular}
 
                 \item[Wotio - ETL Pipeline] \hfill \textbf{2017}\\
                     \begin{tabular}{l|l}
 				\\[-1.0mm]
-                        Ingestion    & Built service to consume data from Wotio API and push to a \textit{Kafka} topic\\
-                                  & Built service to consume data from \textit{Kafka} topic and store to \textit{Postgres} database\\
+                        Ingestion    & Built service to consume data from Wotio API and push to a \textcolor{gray}{\textit{Kafka}} topic\\
+                                  & Built service to consume data from \textcolor{gray}{\textit{Kafka}} topic and store to \textcolor{gray}{\textit{Postgres}} database\\
 				\\[-1.7mm]
-                        Schema   & Designed \textit{database} schema to fit subset of the 100+ Wotio data parameters\\
-				  & Database schema easily \textit{extendable} using Alembic library in \textit{Python}\\
+                        Schema   & Designed \textcolor{gray}{\textit{database}} schema to fit subset of the 100+ Wotio data parameters\\
+				  & Database schema easily \textcolor{gray}{\textit{extendable}} using Alembic library in \textcolor{gray}{\textit{Python}}\\
 				\\[-1.7mm]
-                        Deploy& \textit{Kubernetes} deployment of \textit{Docker} images for each component of the pipeline\\
+                        Deploy& \textcolor{gray}{\textit{Kubernetes}} deployment of \textcolor{gray}{\textit{Docker}} images for each component of the pipeline\\
 				\\[-1.7mm]
-                        Testing      & Built \textit{NodeJS} service to generate fake-data using client-provided \textit{JSON} schema\\
+                        Testing      & Built \textcolor{gray}{\textit{NodeJS}} service to generate fake-data using client-provided \textcolor{gray}{\textit{JSON}} schema\\
 			        \\[-1.0mm]
                     \end{tabular}
 
                 \item[RetailOps - Full Stack Development] \hfill \textbf{2014-2016}\\
                     \begin{tabular}{l|l}
 				\\[-1.0mm]
-                        Javascript & Wrote \textit{NodeJS} proxy media server so that media traffic would \textit{bypass} main servers \\
-				   & Front-end application developed in \textit{ExtJS}, a Javascript framework\\
+                        Javascript & Wrote \textcolor{gray}{\textit{NodeJS}} proxy media server so that media traffic would \textcolor{gray}{\textit{bypass}} main servers \\
+				   & Front-end application developed in \textcolor{gray}{\textit{ExtJS}}, a Javascript framework\\
 				\\[-1.7mm]
-                        Backend    & Extended large backend application using \textit{in-house} Perl API \\
-                                   & Design and extension of \textit{ORM} models for use in application business logic \\
-                                   & Using \textit{ElasticSearch} library to make search queries more informative\\
+                        Backend    & Extended large backend application using \textcolor{gray}{\textit{in-house}} Perl API \\
+                                   & Design and extension of \textcolor{gray}{\textit{ORM}} models for use in application business logic \\
+                                   & Using \textcolor{gray}{\textit{ElasticSearch}} library to make search queries more informative\\
 				\\[-1.7mm]
                         Data       & Creation and extension of MySQL schemas used by backend code and client reports\\
-                                   & Powerful macros, regular expressions and templating to \textit{munge} client data\\
-                        	   & Developed client \textit{implementation process} for catalog data conversion\\
+				   & Powerful macros, regular expressions and templating to \textcolor{gray}{\textit{munge}} client data\\
+				   & Developed client \textcolor{gray}{\textit{implementation process}} for catalog data conversion\\
 				\\[-1.0mm]
                     \end{tabular}
             \end{description}
