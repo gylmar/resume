@@ -33,13 +33,13 @@
 			\begin{tabular}{l|l}
 					    \\[-1.0mm]
 				\textcolor{black}{Virtualize} & Using \textcolor{black}{\textit{VMWare}} to launch minimal \textcolor{black}{\textit{RedHat}} machines in a local lab network\\
-					   & Reducing the service deployment process and \textcolor{black}{\textit{preserving software architecture}}\\
-					   & Test local services by splicing them into a functional machine network\\
+					   & Reducing the \textcolor{black}{\textit{service deployment}} process and \textcolor{black}{\textit{preserving software architecture}}\\
 					    \\[-1.7mm]
-				\textcolor{black}{Network}	   & Designed \textcolor{black}{\textit{dynamic configuration}} for a proxy to route to new machines\\
-					   & Configured firewalls rules to reflect application ports and disallow pings for security\\
+				\textcolor{black}{Network}   & Designed \textcolor{black}{\textit{dynamic network}} configuration for a proxy to route to new machines\\
+					   & Configured application firewalls for \textcolor{black}{\textit{increased network security}}\\
+					   & \textcolor{black}{\textit{Isolated service testing}} done by splicing local services into a functioning network\\
 					    \\[-1.7mm]
-				\textcolor{black}{Scale}   & \textcolor{black}{\textit{Ansible}} script components written to be \textcolor{black}{\textit{reusable}} up to a common-setup\\
+				\textcolor{black}{Scale}   & Wrote \textcolor{black}{\textit{reusable}} and \textcolor{black}{\textit{extendable}} deployment scripts in \textcolor{black}{\textit{Ansible}}\\
 					   & Designed with \textcolor{black}{\textit{production}} and \textcolor{black}{\textit{development}} environments in mind\\
 					    \\[-1.0mm]
 		    	\end{tabular}
@@ -49,15 +49,15 @@
 		\textcolor{gray}{
 			    \begin{tabular}{l|l}
 					\\[-1.0mm]
-				\textcolor{black}{Ingestion}    & Built service to consume data from Wotio API and push to a \textcolor{black}{\textit{Kafka}} topic\\
-					  & Built service to consume data from \textcolor{black}{\textit{Kafka}} topic and store to \textcolor{black}{\textit{Postgres}} database\\
+				\textcolor{black}{Ingestion}& Built \textcolor{black}{\textit{Python}} service to consume data from Wotio API and push to a \textcolor{black}{\textit{Kafka topic}}\\
+					  & Built \textcolor{black}{\textit{Python}} service to consume data from Kafka topic and store to \textcolor{black}{\textit{Postgres database}}\\
 					\\[-1.7mm]
-				\textcolor{black}{Schema}   & Designed \textcolor{black}{\textit{database}} schema to fit subset of the 100+ Wotio data parameters\\
-					  & Database schema easily \textcolor{black}{\textit{extendable}} using Alembic library in \textcolor{black}{\textit{Python}}\\
+				\textcolor{black}{Schemas}   & \textcolor{black}{\textit{Parameterized}} schema to filter relevant subset of 100+ Wotio data parameters\\
+					  & Postgres schema easily extendable using \textcolor{black}{\textit{Alembic}} library in \textcolor{black}{\textit{Python}}\\
 					\\[-1.7mm]
-				\textcolor{black}{Deploy}& \textcolor{black}{\textit{Kubernetes}} deployment of \textcolor{black}{\textit{Docker}} images for each component of the pipeline\\
+				\textcolor{black}{Deploy}   & \textcolor{black}{\textit{Kubernetes}} deployment of \textcolor{black}{\textit{Docker}} images for each component of the pipeline\\
 					\\[-1.7mm]
-				\textcolor{black}{Testing}      & Built \textcolor{black}{\textit{NodeJS}} service to generate fake-data using client-provided \textcolor{black}{\textit{JSON}} schema\\
+				\textcolor{black}{Testing}  & Built \textcolor{black}{\textit{NodeJS}} service to \textcolor{black}{\textit{generate test data}} using client-provided \textcolor{black}{\textit{JSON schema}}\\
 					\\[-1.0mm]
 			    \end{tabular}
 		}
@@ -66,28 +66,28 @@
 		\textcolor{gray}{
                     \begin{tabular}{l|l}
 				\\[-1.0mm]
-                        \textcolor{black}{Javascript} & Wrote \textcolor{black}{\textit{NodeJS}} proxy media server so that media traffic would \textcolor{black}{\textit{bypass}} main servers \\
-				   & Front-end application developed in \textcolor{black}{\textit{ExtJS}}, a Javascript framework\\
+                        \textcolor{black}{Javascript} & Wrote \textcolor{black}{\textit{NodeJS}} proxy media server to \textcolor{black}{\textit{reduce media traffic}} directed at main servers \\
+				   & \textcolor{black}{\textit{Front-end}} application developed in \textcolor{black}{\textit{ExtJS}}, a Javascript framework\\
 				\\[-1.7mm]
-                        \textcolor{black}{Backend}    & Extended large backend application using \textcolor{black}{\textit{in-house}} Perl API \\
-                                   & Design and extension of \textcolor{black}{\textit{ORM}} models for use in application business logic \\
-                                   & Using \textcolor{black}{\textit{ElasticSearch}} library to make search queries more informative\\
+                        \textcolor{black}{Backend}    & \textcolor{black}{\textit{Extended backend API}} using custom (undocumented) \textcolor{black}{\textit{Perl}} library\\
+                                   & Design and extension of \textcolor{black}{\textit{ORM models}} for use in application business logic \\
+                                   & Expanding \textcolor{black}{\textit{ElasticSearch results}} to improve client search data exports\\
 				\\[-1.7mm]
-                        \textcolor{black}{Data}       & Creation and extension of MySQL schemas used by backend code and client reports\\
-				   & Powerful macros, regular expressions and templating to \textcolor{black}{\textit{munge}} client data\\
-				   & Developed client \textcolor{black}{\textit{implementation process}} for catalog data conversion\\
+                        \textcolor{black}{Data}       & Creation and extension of \textcolor{black}{\textit{MySQL}} schemas used by backend code and client reports\\
+				   & Wrote powerful macros and regular expressions to \textcolor{black}{\textit{munge client data}}\\
+				   & Developed \textcolor{black}{\textit{client implementation process}} for catalog data conversion\\
 				\\[-1.0mm]
                     \end{tabular}
 		}
             \end{description}
 
-        \item[\underline{SKILLS \& QUALIFICATIONS}] \hfill \\
+        \item[\underline{SKILLS}] \hfill \\
             \begin{tabular}{l|l}
 					\\[-.2mm]
-                Skills&
-                    Linux-fu
-                    \textbullet ~ Google-fu
-                    \textbullet ~ Object-Oriented Thinking
+                Personal&
+                    Autonomous and collaborative
+                    \textbullet ~ High and low level perspective
+                    \textbullet ~ Unix command line master
 					\\[1.1mm]
                 \iffalse
 		Languages&
@@ -101,7 +101,7 @@
 		    \textbullet ~ Spanish
 					\\[1.1mm]
 	       \fi
-                Tools&
+                Technical&
                     Linux
                     \textbullet ~ GIT
                     \textbullet ~ VIM
@@ -109,7 +109,7 @@
                     \textbullet ~ VMWare/VirtualBox
                     \textbullet ~ Kubernetes/Docker
 					\\[1.1mm]
-               Math &
+               Logical &
                     Algorithm Design
                     \textbullet ~ Numerical Analysis
                     \textbullet ~ Machine Learning
