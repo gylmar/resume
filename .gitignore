@@ -2,3 +2,5 @@
 *.log
 *.out
 *.tex
+.DS_Store
+/share
