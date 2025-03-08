@@ -15,7 +15,10 @@ On a Mac:
 ```
 brew update
 brew cask install mactex
-# you may need to confirm /Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin is in your PATH
+
+# Add Tex bin folder to PATH
+echo 'export PATH="/Library/TeX/texbin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
 ```
 
 Then from inside this `resume` folder:
