@@ -1,6 +1,7 @@
 \documentclass[12pt]{article}
 \usepackage{hyperref}
 \usepackage{amsmath}
+\usepackage{multirow, tabularx}
 \usepackage{enumitem}
 \usepackage[
     top = 1.0cm,
@@ -34,188 +35,172 @@
         expertise designing, implementing, monitoring and maintaining
         full-stack distributed applications in different environments.
         \item[\underline{SKILLS}] \hfill \\
-            \begin{tabular}{l|l}
-                Personal&
-                    Autonomous
-                    \textbullet ~ Collaborative
-                    \textbullet ~ Inquisitive
-                    \textbullet ~ Systemic + Technical level perspectives
-					\\[1.1mm]
-                Languages&
-                    Java
-                    \textbullet ~ Kotlin
-                    \textbullet ~ Python
-                    \textbullet ~ Javascript (Typescript, NodeJs, AngularJs)
-                    \textbullet ~ C++
-                    \textbullet ~ C
-                    \textbullet ~ Perl
-                    \\[1.1mm]
-                Infra Components&
-                    Compute (\textit{EC2, Fargate, Lambda})
-                    \textbullet ~ Notification (\textit{SNS})
-                   	\textbullet ~ Object Storage (\textit{S3})
-                    \\[1.1mm]
-                    &
-                    NoSQL Database (\textit{DynamoDB})
-                    \textbullet ~ Warehousing (\textit{Redshift})
-                    \textbullet ~ DNS \& Routing (\textit{Route 53})
-                    \\[1.1mm]
-                    &
-                    Networking (VPC)
-                    \textbullet ~ Workflows (SWF)
-                    \textbullet ~ Infrastructure as Code (AWS CDK Library)
-                    \\[1.1mm]
-                Infra Monitoring &
-                Cloudwatch Logs, Metrics, Alarms, Dashboards
-                    \textbullet ~ Ticket Generation, Response, Management
-					\\[1.1mm]
-                Development &
-                    Linux
-                    \textbullet ~ Android
-                    \textbullet ~ GIT
-                    \textbullet ~ VIM
-                    \textbullet ~ TMUX
-                    \textbullet ~ VMWare/VirtualBox
-                    \textbullet ~ Kubernetes/Docker
-					\\[1.1mm]
-            \end{tabular}
+                        \begin{tabularx}{\linewidth}{>{\centering\arraybackslash}p{2cm}|X}
+                            \multirow{1}{*}{\textcolor{black}{Personal}}
+                                & Autonomous
+                                \textbullet ~ Collaborative
+                                \textbullet ~ Inquisitive
+                                \textbullet ~ Systemic + Technical level perspectives
+                            \\[.1cm]
 
-        \item[\underline{PROJECT EXPERIENCE}] \hfill
-            \begin{description}
-                \item[Amazon One (Customer + Enterprise Biometrics Solution)] \hfill \\
-                Implemented various applications for customers to engage with their
-                private date using a palm hover. This could be payment or any piece of data they authorized to send to a business.\hfill \\
-                \textcolor{gray}{
-                    \begin{tabular}{l|l}
-                        \\[-2.5mm]
-                        \textcolor{black}{AO Enterprise}
+                            \multirow{1}{*}{\textcolor{black}{Languages}}
+                                & Java
+                                \textbullet ~ Kotlin
+                                \textbullet ~ Python
+                                \textbullet ~ Javascript (Typescript, NodeJs, AngularJs)
+                                \textbullet ~ C++
+                                \textbullet ~ C
+                                \textbullet ~ Perl
+                            \\[.1cm]
+
+                            \multirow{3}{*}{\textcolor{black}{\shortstack{Infra \\ Components}}}
+                            & Compute (\textit{EC2, Fargate, Lambda})
+                                \textbullet ~ Notification (\textit{SNS})
+                                \textbullet ~ Object Storage (\textit{S3}) \\
+                            & NoSQL Database (\textit{DynamoDB})
+                                \textbullet ~ Warehousing (\textit{Redshift})
+                                \textbullet ~ DNS \& Routing (\textit{Route 53}) \\
+                            & Networking (VPC)
+                                \textbullet ~ Workflows (SWF)
+                                \textbullet ~ Infrastructure as Code (AWS CDK Library)
+                            \\[.1cm]
+
+                            \multirow{2}{*}{\textcolor{black}{\shortstack{Infra \\ Monitoring}}}
+                                & AWS Cloudwatch Service - Logs, Metrics, Alarms, Dashboards \\
+                                & Support Ticketing \& Routing - Generation, Response, Management
+                            \\[.1cm]
+
+                            \multirow{1}{*}{\textcolor{black}{Dev Env}}
+                                & Linux
+                                \textbullet ~ Android
+                                \textbullet ~ GIT
+                                \textbullet ~ VMWare/VirtualBox
+                                \textbullet ~ Kubernetes/Docker
+                            \\[.80mm]
+                        \end{tabularx}
+
+            \item[\underline{PROJECT EXPERIENCE}] \hfill
+                \begin{description}
+                    \item[Amazon - Amazon One] \hfill \\
+                        Biometric Solutions that enabled users to make payments or send data to a business by hovering their palm.\hfill
+                        \\[1mm]
+                        \begin{tabularx}{\linewidth}{>{\centering\arraybackslash}l|X}
+                            \multirow{4}{*}{\textcolor{black}{\shortstack{AO \\ Enterprise}}}
                             & \textcolor{black}{Designed + implemented a public endpoint service} for AO App to hit \textcolor{black}{internal dependencies} \\
                             & Ground-up feature that required \textcolor{black}{deep application and security reviews} within the organization \\
                             & \textcolor{black}{Delegated} across teammates to meet \textcolor{black}{4-month timeline} for bringing up a working app\\
                             & Enabled encryption and secure communication protocols to ensure data integrity and confidentiality\\
-                        \\[-1.7mm]
-                        \textcolor{black}{Age Verification}
+                            \\
+                            \multirow{2}{*}{\shortstack{\textcolor{black}{Age} \\ \textcolor{black}{Verification}}}
                             & Implemented a \textcolor{black}{Kotlin Android App} for AO customers to identify as 21+ at stadiums\\
                             & Designed \textcolor{black}{end-to-end encryption} for secure data transmission between Android devices\\
-                        \\[-1.7mm]
-                        \textcolor{black}{Starbucks}
+                            \\
+                            \multirow{1}{*}{\textcolor{black}{Starbucks}}
                             & Extended base \textcolor{black}{AO Android App} for customers to pay with their Starbucks gift card\\
-                        \\[-0.3mm]
-                        \textcolor{black}{Leadership}
+                            \\
+                            \multirow{3}{*}{\textcolor{black}{Leadership}}
                             & \textcolor{black}{Negotiated UX with Product Management} to design requirements \\
                             & Mentored teammates in \textcolor{black}{application extensions} for new features and UX improvements\\
-                            & Lead teammates in writing backend extensions to \textcolor{black}{add features and scale customer actions}\\
-                        \\[-0.3mm]
-                    \end{tabular}
-                }
+                            & Led teammates in writing backend extensions to \textcolor{black}{add features and scale customer actions}\\
+                        \end{tabularx}
 
-                \item[Amazon - Whole Foods Dashcart Checkout] \hfill \\
-                \textcolor{gray}{
-                    \begin{tabular}{l|l}
-                        \\[-0.3mm]
-                        \textcolor{black}{Backend}
-                            & Designed backend service of \textcolor{black}{complex dependencies between Amazon and Whole Foods} \\
-                            & \textcolor{black}{Recommended re-use of existing components} to reduce development time \\
-                            & Maintained proper \textcolor{black}{product visibility} through meticulous app \textcolor{black}{business metrics} \\
-                        \\[-1.7mm]
-                        \textcolor{black}{Leadership}
-                            & \textcolor{black}{Split design into compoments} to guide \textcolor{black}{team-wide implementations}\\
-                            & Successfully parallelized development resources to meet delivery in an especially short timeline\\
-                        \\[-0.3mm]
-                    \end{tabular}
-                }
+                    \item[Amazon - Whole Foods Dashcart Checkout] \hfill \\
+                    \textcolor{gray}{
+                        \begin{tabularx}{\linewidth}{>{\centering\arraybackslash}l|X}
+                            \multirow{3}{*}{\textcolor{black}{Backend}}
+                                & Designed backend service of \textcolor{black}{complex dependencies between Amazon and Whole Foods} \\
+                                & \textcolor{black}{Recommended re-use of existing components} to reduce development time \\
+                                & Maintained proper \textcolor{black}{product visibility} through meticulous app \textcolor{black}{business metrics} \\
+                            \\
+                            \multirow{2}{*}{\textcolor{black}{Leadership}}
+                                & \textcolor{black}{Split design into components} to guide \textcolor{black}{team-wide implementations}\\
+                                & Successfully parallelized development resources to meet delivery in an especially short timeline\\
+                        \end{tabularx}
+                    }
 
-                \item[Amazon - Whole Foods Inventory Restock] \hfill \\
-                \textcolor{gray}{
-                    \begin{tabular}{l|l}
-                        \\[-0.3mm]
-                        \textcolor{black}{Application}
-                            & Wrote a \textcolor{black}{Javascript webapp} for Store Associates to \textcolor{black}{replenish store inventory daily}\\
-                            & Wrote backend service integrations with \textcolor{black}{complex dependencies} across multiple teams\\
-                            & Enforced \textcolor{black}{smooth rollouts system-wide} through feature flags and code pipelines \\
-                            & Maintained proper \textcolor{black}{product visibility} through meticulous app \textcolor{black}{business metrics} \\
-                        \\[-1.7mm]
-                        \textcolor{black}{Scaling}
-                            & Launched pilot app in 10 stores, scaled out to \textcolor{black}{over 500 stores nationwide}\\
-                            & Scaled backend processes to handle \textcolor{black}{millions of item events daily}\\
-                            & Value Add: \textcolor{black}{\$40M/yr in savings for improved store operations}\\
-                        \\[-1.7mm]
-                        \textcolor{black}{Leadership}
-                            & \textcolor{black}{Designed multiple end-to-end solutions} to guide \textcolor{black}{team-wide implementations}\\
-                            & Mentored teammates in \textcolor{black}{application extensions} for new features and UX improvements\\
-                            & Lead teammates in writing backend extensions to \textcolor{black}{add features and scale customer actions}\\
-                        \\[-0.3mm]
-                    \end{tabular}
-                }
+                    \item[Amazon - Whole Foods Inventory Restock] \hfill \\
+                    \textcolor{gray}{
+                        \begin{tabularx}{\linewidth}{>{\centering\arraybackslash}l|X}
+                            \multirow{4}{*}{\textcolor{black}{Application}}
+                                & Wrote a \textcolor{black}{Javascript webapp} for Store Associates to \textcolor{black}{replenish store inventory daily}\\
+                                & Wrote backend service integrations with \textcolor{black}{complex dependencies} across multiple teams\\
+                                & Enforced \textcolor{black}{smooth rollouts system-wide} through feature flags and code pipelines \\
+                                & Maintained proper \textcolor{black}{product visibility} through meticulous app \textcolor{black}{business metrics} \\
+                            \\
+                            \multirow{3}{*}{\textcolor{black}{Scaling}}
+                                & Launched pilot app in 10 stores, scaled out to \textcolor{black}{over 500 stores nationwide}\\
+                                & Scaled backend processes to handle \textcolor{black}{millions of item events daily}\\
+                                & Value Add: \textcolor{black}{\$40M/yr in savings for improved store operations}\\
+                            \\
+                            \multirow{2}{*}{\textcolor{black}{Leadership}}
+                                & \textcolor{black}{Designed multiple end-to-end solutions} to guide \textcolor{black}{team-wide implementations}\\
+                                & Mentored teammates in \textcolor{black}{application extensions} for new features and UX improvements\\
+                        \end{tabularx}
+                    }
 
-                \item[SPAWAR/SAIC - Deployment Process Engineering] \hfill \\
-                \textcolor{gray}{
-                    \begin{tabular}{l|l}
-                        \\[-0.3mm]
-                        \textcolor{black}{Virtualize}
-                            & Using \textcolor{black}{VMWare} to launch minimal \textcolor{black}{RedHat} instances in a local lab network\\
-                            & Reducing the \textcolor{black}{service deployment} process and \textcolor{black}{preserving software architecture}\\
-                        \\[-1.7mm]
-                        \textcolor{black}{Network}
-                            & Designed a \textcolor{black}{layer 3 dynamic network} configuration for proxies to route to new instances\\
-                            & Configured application firewalls for \textcolor{black}{increased network security}\\
-                            & \textcolor{black}{Isolated service testing} done by splicing local services into a functioning network\\
-                        \\[-1.7mm]
-                        \textcolor{black}{Scale}
-                            & Wrote \textcolor{black}{reusable} and \textcolor{black}{extendable} deployment scripts in \textcolor{black}{Ansible}\\
-                            & Designed with \textcolor{black}{production} and \textcolor{black}{development} environments in mind\\
-                        \\[-0.3mm]
-                    \end{tabular}
-                }
+                    \item[SPAWAR/SAIC - Deployment Process Architecting] \hfill \\
+                    \textcolor{gray}{
+                        \begin{tabularx}{\linewidth}{>{\centering\arraybackslash}l|X}
+                            \multirow{2}{*}{\textcolor{black}{Virtualize}}
+                                & Using \textcolor{black}{VMWare} to launch minimal \textcolor{black}{RedHat} instances in a local lab network\\
+                                & Reducing the \textcolor{black}{service deployment} process and \textcolor{black}{preserving software architecture}\\
+                            \\
+                            \multirow{3}{*}{\textcolor{black}{Network}}
+                                & Designed a \textcolor{black}{layer 3 dynamic network} configuration for proxies to route to new instances\\
+                                & Configured application firewalls for \textcolor{black}{increased network security}\\
+                                & \textcolor{black}{Isolated service testing} done by splicing local services into a functioning network\\
+                            \\
+                            \multirow{2}{*}{\textcolor{black}{Scale}}
+                                & Wrote \textcolor{black}{reusable} and \textcolor{black}{extendable} deployment scripts in \textcolor{black}{Ansible}\\
+                                & Designed with \textcolor{black}{production} and \textcolor{black}{development} environments in mind\\
+                        \end{tabularx}
+                    }
 
-                \item[Tureus - ETL Pipeline] \hfill\\
-                \textcolor{gray}{
-                    \begin{tabular}{l|l}
-                        \\[-0.3mm]
-                        \textcolor{black}{Ingestion}
-                            & Built \textcolor{black}{Python} service to consume data from private API and push to a \textcolor{black}{Kafka topic}\\
-                            & Built \textcolor{black}{Python} service to consume data from Kafka topic and store to \textcolor{black}{Postgres database}\\
-                        \\[-1.7mm]
-                        \textcolor{black}{Schemas}
-                            & \textcolor{black}{Parameterized} schema to filter relevant subset of 100+ data parameters\\
-                            & Postgres schema easily extendable using \textcolor{black}{Alembic} library in \textcolor{black}{Python}\\
-                        \\[-1.7mm]
-                        \textcolor{black}{Deploy}
-                            & \textcolor{black}{Kubernetes} deployment of \textcolor{black}{Docker} images for each component of the pipeline\\
-                        \\[-1.7mm]
-                        \textcolor{black}{Testing}
-                            & Built \textcolor{black}{NodeJS} service to \textcolor{black}{generate test data} using client-provided \textcolor{black}{JSON schema}\\
-                        \\[-0.3mm]
-                    \end{tabular}
-                }
+                    \item[Tureus - ETL Pipeline] \hfill\\
+                    \textcolor{gray}{
+                        \begin{tabularx}{\linewidth}{>{\centering\arraybackslash}l|X}
+                            \multirow{2}{*}{\textcolor{black}{Ingestion}}
+                                & Built \textcolor{black}{Python} service to consume data from private API and push to a \textcolor{black}{Kafka topic}\\
+                                & Built \textcolor{black}{Python} service to consume data from Kafka topic and store to \textcolor{black}{Postgres database}\\
+                            \\
+                            \multirow{2}{*}{\textcolor{black}{Schemas}}
+                                & \textcolor{black}{Parameterized} schema to filter relevant subset of 100+ data parameters\\
+                                & Postgres schema easily extendable using \textcolor{black}{Alembic} library in \textcolor{black}{Python}\\
+                            \\
+                            \multirow{1}{*}{\textcolor{black}{Deploy}}
+                                & \textcolor{black}{Kubernetes} deployment of \textcolor{black}{Docker} images for each component of the pipeline\\
+                            \\
+                            \multirow{1}{*}{\textcolor{black}{Testing}}
+                                & Built \textcolor{black}{NodeJS} service to \textcolor{black}{generate test data} using client-provided \textcolor{black}{JSON schema}\\
+                        \end{tabularx}
+                    }
 
-                \item[RetailOps - Applications Developer] \hfill\\
-                \textcolor{gray}{
-                    \begin{tabular}{l|l}
-                        \\[-0.3mm]
-                        \textcolor{black}{ETL}
-                            & Implemented \textcolor{black}{data pipeline} from live \textcolor{black}{RabbitMQ} events to \textcolor{black}{MongoDB}\\
-                            & Implemented \textcolor{black}{data pipeline} from a \textcolor{black}{private API} with \textcolor{black}{multi-source data} to \textcolor{black}{MySQL}\\
-                        \\[-1.7mm]
-                        \textcolor{black}{Backend}
-                            & \textcolor{black}{Extended backend API} using custom \textcolor{black}{Perl} library\\
-                            & Expanding \textcolor{black}{Elasticsearch results} to improve client search \textcolor{black}{data exports}\\
-                            & Wrote \textcolor{black}{NodeJS} proxy media server to \textcolor{black}{reduce media traffic} directed at main servers \\
-                        \\[-1.7mm]
-                        \textcolor{black}{Data}
-                            & Creation and extension of \textcolor{black}{MySQL} schemas used by backend code and \textcolor{black}{client reports}\\
-                            & Wrote powerful macros and regular expressions to \textcolor{black}{munge client data}\\
-                            & Developed \textcolor{black}{client implementation process} for catalog data conversion\\
-                    \end{tabular}
+                    \item[RetailOps - Applications Developer] \hfill\\
+                    \textcolor{gray}{
+                        \begin{tabularx}{\linewidth}{>{\centering\arraybackslash}l|X}
+                            \multirow{2}{*}{\textcolor{black}{ETL}}
+                                & Implemented \textcolor{black}{data pipeline} from live \textcolor{black}{RabbitMQ} events to \textcolor{black}{MongoDB}\\
+                                & Implemented \textcolor{black}{data pipeline} from a \textcolor{black}{private API} with \textcolor{black}{multi-source data} to \textcolor{black}{MySQL}\\
+                            \\
+                            \multirow{3}{*}{\textcolor{black}{Backend}}
+                                & \textcolor{black}{Extended backend API} using custom \textcolor{black}{Perl} library\\
+                                & Expanding \textcolor{black}{Elasticsearch results} to improve client search \textcolor{black}{data exports}\\
+                                & Wrote \textcolor{black}{NodeJS} proxy media server to \textcolor{black}{reduce media traffic} directed at main servers \\
+                            \\
+                            \multirow{3}{*}{\textcolor{black}{Data}}
+                                & Creation and extension of \textcolor{black}{MySQL} schemas used by backend code and \textcolor{black}{client reports}\\
+                                & Wrote powerful macros and regular expressions to \textcolor{black}{munge client data}\\
+                                & Developed \textcolor{black}{client implementation process} for catalog data conversion\\
+                        \end{tabularx}
 		        }
-            \end{description}
+                \end{description}
 
-        \item[\underline{EDUCATION}]  \hfill \\
-            \begin{tabular}{l|l}
-                University of California, San Diego & B.S. Computer Science - Mathematics \\
-                & B.S. Cognitive Science (specialization in ML Computation)\\
-            \end{tabular}
-
+            \item[\underline{EDUCATION}] \hfill \\
+                \begin{tabularx}{\linewidth}{>{\centering\arraybackslash}l|X}
+                    \multirow{2}{*}{\textcolor{black}{University of California, San Diego}}
+                        & \textcolor{black}{B.S. Computer Science - Mathematics} \\
+                        & \textcolor{black}{B.S. Cognitive Science (specialization in ML Computation)} \\
+                \end{tabularx}
 
 	\iffalse
         \item[\underline{MATH PROJECTS}] \hfill \\
