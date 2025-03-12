@@ -11,7 +11,7 @@
 ]{geometry}
 
 \pagestyle{empty}
-\renewcommand{\arraystretch}{1.0}
+\renewcommand{\arraystretch}{0.7}
 \renewcommand{\familydefault}{\sfdefault}
 
 \setlist[itemize]{leftmargin=0pt}
@@ -25,6 +25,7 @@
     {\LARGE \textsf{\fontfamily{ptm}\selectfont \textbf{Gylmar A. Moreno}}}
     \hfill \href{mailto:gylmar.a.moreno+work+inquiry@gmail.com}{\small gylmar.a.moreno@gmail.com}\\
     \hspace*{0pt} \hfill \href{tel:+13479210474}{\small (347) 921-0474}
+    \\[-.5cm]
 
     \begin{description}
         \item[\textsf{\fontfamily{ptm}\selectfont SUMMARY}] \hfill
@@ -47,14 +48,14 @@
 
                 \multirow{1}{*}{\centering \textcolor{black}{\shortstack{Infrastructure\\Components}}}
                     &  \begin{tabular}{l|l|l} % Center-aligned 3x3 grid
-                        Compute (\textit{EC2, Fargate, Lambda}) & Notification (\textit{SNS}) & Object Storage (\textit{S3}) \\
-                        NoSQL Database (\textit{DynamoDB}) & Warehousing (\textit{Redshift}) & DNS \& Routing (\textit{Route 53}) \\
-                        Networking (VPC) & Workflows (SWF) & Infrastructure as Code (\textit{AWS CDK})
+                        Compute (\textit{EC2, Fargate, Lambda}) & Event Notification (\textit{SNS}) & Object Storage (\textit{S3}) \\
+                        Database (\textit{PostgreSQL, DynamoDB}) & Data Warehousing (\textit{Redshift}) & DNS \& Routing (\textit{Route 53}) \\
+                        Networking (VPC) & Automated Workflows (SWF) & Infrastructure as Code (\textit{CDK})
                         \end{tabular}
                 \\[.7cm]
 
                 \multirow{2}{*}{\textcolor{black}{\shortstack{Infrastructure\\Monitoring}}}
-                    & AWS Cloudwatch Service - Logs, Metrics, Alarms, Dashboards \\
+                    & AWS Cloudwatch Service - Logs, Log Groups, Metrics, Alarms, Dashboards \\
                     & Support Ticketing \& Routing - Generation, Response, Management
                 \\[.15cm]
 
@@ -64,26 +65,14 @@
                     GIT,
                     VMWare/VirtualBox,
                     Kubernetes/Docker
-                \\[.15cm]
-
-                \multirow{1}{*}{\textcolor{black}{Personal}}
-                    & Autonomous,
-                    Collaborative,
-                    Inquisitive,
-                    Systemic and Technical level perspectives
-                \\[.15cm]
-
             \end{tabularx}
 
-        \item[\textsf{\fontfamily{ptm}\selectfont ENGINEERING EXPERIENCE}] \hfill
-            \\[-.4cm]
+        \item[\textsf{\fontfamily{ptm}\selectfont WORK EXPERIENCE}] \hfill \\[-.4cm]
             \rule{\linewidth}{1.0pt} % Add this line for a horizontal rule
             \\[-.8cm]
             \begin{description}
-                \item[Amazon - Amazon One] \hfill \\
+                \item[Amazon - Amazon One] \hfill \\[.1cm]
                 \textcolor{gray}{
-                    Biometric Solutions that enabled users to make payments or send data to a business by hovering their palm.\hfill
-                    \\[1mm]
                     \begin{tabularx}{\linewidth}{>{\centering\arraybackslash}l|X}
                         \multirow{4}{*}{\textcolor{black}{\shortstack{AO \\ Enterprise}}}
                         & \textcolor{black}{Designed + implemented a public endpoint service} for AO App to hit \textcolor{black}{internal dependencies} \\
