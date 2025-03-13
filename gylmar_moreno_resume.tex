@@ -11,7 +11,6 @@
 ]{geometry}
 
 \pagestyle{empty}
-\renewcommand{\arraystretch}{0.7}
 \renewcommand{\familydefault}{\sfdefault}
 
 \setlist[itemize]{leftmargin=0pt}
@@ -25,143 +24,127 @@
 {\LARGE \textsf{\fontfamily{ptm}\selectfont \textbf{Gylmar A. Moreno}}}
 \hfill \href{mailto:gylmar.a.moreno+work+inquiry@gmail.com}{\small gylmar.a.moreno@gmail.com}\\
 \hspace*{0pt} \hfill \href{tel:+13479210474}{\small (347) 921-0474}
-\\[-.5cm]
+\\[-.7cm]
 
 \begin{description}
     \item[\textsf{\fontfamily{ptm}\selectfont SUMMARY}] \hfill
-        \\[-.4cm]
+        \\[-.3cm]
         \noindent\rule{\linewidth}{1.0pt}
         Software engineer specializing in scalable backend architecture and seamless
-        client-side experiences built in cross-functional collaboration with Engineering,
-        Product, Data, Security, and Quality teams. Skilled in delivering data-driven systems
-        with end-to-end metrics and logging for monitoring mission-critical services
-        and KPI tracking.
+        client-side experiences through proven cross-functional collaboration with Engineering,
+        Product, Data, Security, and Quality teams. Delivers data-driven
+        systems with end-to-end metrics and logging to provide actionable insights for
+        monitoring mission-critical services and tracking KPIs.
 
     \item[\textsf{\fontfamily{ptm}\selectfont TECHNICAL SKILLS}] \hfill
-        \\[-.4cm]
+        \\[-.3cm]
         \rule{\linewidth}{1.0pt}
         \\[.2cm]
         \begin{tabularx}{\linewidth}{>{\centering\arraybackslash}l|X}
             \multirow{1}{*}{Languages}
                 & Java , Kotlin, Python, Javascript (TypeScript, NodeJs, AngularJs)
-            \\[.15cm]
+            \\
 
             \multirow{1}{*}{\centering \shortstack{Infrastructure\\Components}}
-                & \begin{tabular}{l|l|l}
-                    Compute (\textit{EC2, Fargate, Lambda}) & Event Notification (\textit{SNS}) & Object Storage (\textit{S3}) \\
-                    Database (\textit{PostgreSQL, DynamoDB}) & Data Warehousing (\textit{Redshift}) & DNS \& Routing (\textit{Route 53}) \\
-                    Networking (VPC) & Automated Workflows (SWF) & Infrastructure as Code (\textit{CDK})
+                & \begin{tabular}{c|c|c}
+                Compute (\textit{EC2, Fargate, Lambda}) & Object Storage (\textit{S3}) & Infrastructure (\textit{CDK, Ansible}) \\
+                    DBs (\textit{DynamoDB, PostgreSQL, MongoDB}) & Warehousing (\textit{Redshift}) & DNS \& Routing (\textit{Route 53}) \\
+                    Events (\textit{SNS, KAFKA, RabbitMQ}) & Workflows (SWF) & Networking (VPC)
                     \end{tabular}
-            \\[.7cm]
+            \\
 
             \multirow{2}{*}{\shortstack{Infrastructure\\Monitoring}}
                 & AWS Cloudwatch Service - Logs, Log Groups, Metrics, Alarms, Dashboards \\
                 & Support Ticketing \& Routing - Generation, Response, Management
-            \\[.15cm]
+            \\
 
             \multirow{1}{*}{\shortstack{Dev Env}}
                 & Linux,
                 Android,
                 GIT,
                 VMWare/VirtualBox,
-                Kubernetes/Docker
+                Kubernetes/Docker,
+                Regex
         \end{tabularx}
 
-    \item[\textsf{\fontfamily{ptm}\selectfont WORK EXPERIENCE}] \hfill \\[-.4cm]
+    \item[\textsf{\fontfamily{ptm}\selectfont WORK EXPERIENCE}] \hfill \\[-.3cm]
         \rule{\linewidth}{1.0pt}
         \\[-.8cm]
         \begin{description}
-            \item[AMAZON - Physical Stores] \hfill \\[.1cm]
-                \begin{tabularx}{\linewidth}{>{\centering\arraybackslash}l|X}
-                    \multirow{10}{*}{\shortstack{Amazon \\ One}}
-                            & Designed + implemented a public endpoint service for AO App to hit internal dependencies \\
-                            & Ground-up feature that required deep application and security reviews within the organization \\
-                            & Delegated across teammates to meet 4-month timeline for bringing up a working app\\
-                            & Enabled encryption and secure communication protocols to ensure data integrity and confidentiality\\
-                            & Implemented a Kotlin Android App for AO customers to identify as 21+ at stadiums\\
-                            & Designed end-to-end encryption for secure data transmission between Android devices\\
-                            & Extended base AO Android App for customers to pay with their Starbucks gift card\\
-                            & Negotiated UX with Product Management to design requirements \\
-                            & Mentored teammates in application extensions for new features and UX improvements\\
-                            & Led teammates in writing backend extensions to add features and scale customer actions\\
+        \item[Amazon - AWS (Amazon Web Service)] \hfill May 2022- June 2024
+        \begin{itemize}[leftmargin=*]
+            \item Designed and led implementation of a public endpoint service for
+            customer-facing Amazon One Enterprise Devices to hit internal dependencies
+            so that customers could securely store and use Corporate Badges using their palm.
+            The service handled high traffic and ensured data integrity and
+            confidentiality (ie. encrypting Palm Images, BiometricIds and BadgeIds)
+            through a chain of backend security measures that allowed secure transmission
+            of data between system components. The solution was vetted by application and
+            security reviews within the organization.
 
-                    \\
+            \item Developed a Kotlin-based Android App for AO clients to verify 21+
+            eligibility of customers at stadiums. Implemented encryption
+            protocols to ensure data integrity and confidentiality when transmitting
+            data between wired devices. The solution was vetted by application and
+            security reviews within the organization.
 
-                    \multirow{13}{*}{\shortstack{Whole \\ Foods \\ Market}}
-                    & Recommended re-use of existing components to reduce development time \\
-                    & Maintained proper product visibility through meticulous app business metrics \\
-                    & Split design into components to guide team-wide implementations\\
-                    & Successfully parallelized development resources to meet delivery in an especially short timeline\\
-                    & Wrote a Javascript webapp for Store Associates to replenish store inventory daily\\
-                    & Wrote backend service integrations with complex dependencies across multiple teams\\
-                    & Enforced smooth rollouts system-wide through feature flags and code pipelines \\
-                    & Maintained proper product visibility through meticulous app business metrics \\
-                    & Launched pilot app in 10 stores, scaled out to over 500 stores nationwide\\
-                    & Scaled backend processes to handle millions of item events daily\\
-                    & Value Add: \$40M/yr in savings for improved store operations\\
-                    & Designed multiple end-to-end solutions to guide team-wide implementations\\
-                    & Mentored teammates in application extensions for new features and UX improvements\\
-                \end{tabularx}
+            \item Extended the customer-facing AO Android App to support Starbucks gift card payments.
+        \end{itemize}
 
-            \item[SPAWAR/SAIC] \hfill \\
-                \begin{tabularx}{\linewidth}{>{\centering\arraybackslash}l|X}
-                    \multirow{2}{*}{Virtualize}
-                        & Using VMWare to launch minimal RedHat instances in a local lab network\\
-                        & Reducing the service deployment process and preserving software architecture\\
-                    \\
-                    \multirow{3}{*}{Network}
-                        & Designed a layer 3 dynamic network configuration for proxies to route to new instances\\
-                        & Configured application firewalls for increased network security\\
-                        & Isolated service testing done by splicing local services into a functioning network\\
-                    \\
-                    \multirow{2}{*}{Scale}
-                        & Wrote reusable and extendable deployment scripts in Ansible\\
-                        & Designed with production and development environments in mind\\
-                \end{tabularx}
+        \item[Amazon - Whole Foods Market (WFM)] \hfill Sept 2018 - May 2022
+        \begin{itemize}[leftmargin=*]
+            \item Led the development and rollout of an Inventory Restocking application,
+            launching an MVP in 10 pilot stores and scaling to over 500 WFM stores nationwide.
+            Enforced smooth rollouts system-wide through feature flags and code pipelines.
+            Designed end-to-end solutions to guide team implementations for efficiency and scale,
+            reaching millions of item events daily at peak. Delivered \$40M in annual savings
+            through improved store operations.
 
-            \item[TUREUS] \hfill\\
-                \begin{tabularx}{\linewidth}{>{\centering\arraybackslash}l|X}
-                    \multirow{2}{*}{Ingestion}
-                        & Built Python service to consume data from private API and push to a Kafka topic\\
-                        & Built Python service to consume data from Kafka topic and store to Postgres database\\
-                    \\
-                    \multirow{2}{*}{Schemas}
-                        & Parameterized schema to filter relevant subset of 100+ data parameters\\
-                        & Postgres schema easily extendable using Alembic library in Python\\
-                    \\
-                    \multirow{1}{*}{Deploy}
-                        & Kubernetes deployment of Docker images for each component of the pipeline\\
-                    \\
-                    \multirow{1}{*}{Testing}
-                        & Built NodeJS service to generate test data using client-provided JSON schema\\
-                \end{tabularx}
+            \item Led implementation of a dashcart customer process which included sending
+            customers a receipt and email confirmation when a customer left a store.
+            Used Whole Foods infrastructure and adapted it design into components to
+            guide team-wide implementations. Successfully parallelized development
+            resources to meet delivery in an especially short timeline.
 
-            \item[RETAILOPS] \hfill\\
-                \begin{tabularx}{\linewidth}{>{\centering\arraybackslash}l|X}
-                \multirow{2}{*}{ETL}
-                    & Implemented data pipeline from live RabbitMQ events to MongoDB\\
-                    & Implemented data pipeline from a private API with multi-source data to MySQL\\
-                \\
-                \multirow{3}{*}{Backend}
-                    & Extended backend API using custom Perl library\\
-                    & Expanding Elasticsearch results to improve client search data exports\\
-                    & Wrote NodeJS proxy media server to reduce media traffic directed at main servers \\
-                \\
-                \multirow{3}{*}{Data}
-                    & Creation and extension of MySQL schemas used by backend code and client reports\\
-                    & Wrote powerful macros and regular expressions to munge client data\\
-                    & Developed client implementation process for catalog data conversion\\
-                \end{tabularx}
-         \end{description}
+            \item Dashcart smart payment processing on checkout flow, ensuring seamless transactions and customer satisfaction.
+        \end{itemize}
+
+        \item[Space and Naval Warfare Systems Command (SPAWAR) via SAIC] \hfill May 2017 - July 2018
+        \begin{itemize}[leftmargin=*]
+        \item Enhanced service deployment and network security for the v22 Osprey data
+            infrastructure by automating RedHat instance provisioning and network configuration
+            with VMware and Ansible. Implemented dynamic layer 3 proxy routing and application
+            firewalls, contributing to a more reliable and secure data environment.
+        \end{itemize}
+
+        \item[Comcast via Tureus (Contract)] \hfill March 2017
+        \begin{itemize}[leftmargin=*]
+            \item Built an ETL pipeline from a parking meter data endpoint
+            to PostgreSQL using Python and Kafka topics. Designed flexible
+            schemas with Alembic migrations to improve data accessibility
+            and analysis.
+        \end{itemize}
+
+        \item[RetailOps] \hfill Feb 2013 - Dec 2016
+        \begin{itemize}[leftmargin=*]
+            \item Delivered improvements to client data access
+            by building and maintaining data pipelines and infrastructure.
+            Key accomplishments include: real-time data integration from RabbitMQ
+            to MongoDB, consolidating client data from their API's to MySQL,
+            optimized media delivery with a NodeJS proxy, and enhanced
+            client search capabilities through Elasticsearch.
+        \end{itemize}
+
+        \end{description}
 
         \item[\textsf{\fontfamily{ptm}\selectfont EDUCATION}] \hfill
-        \\[-.4cm]
+        \\[-.3cm]
         \rule{\linewidth}{1.0pt}
         \\[.1cm]
             \begin{tabularx}{\linewidth}{>{\centering\arraybackslash}l|X}
-            \multirow{2}{*}{\textbf{University of California, San Diego}}
+            \multirow{2}{*}{\shortstack{\textbf{University of California, San Diego} \\ 2008-2013}}
                 & B.S. Computer Science - Mathematics \\
-                & B.S. Cognitive Science (specialization in ML Computation) \\
+                & B.S. Cognitive Science (specialization in ML/AI Computation) \\
             \end{tabularx}
 
 \end{description}
