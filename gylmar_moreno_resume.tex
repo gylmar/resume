@@ -26,30 +26,127 @@
 \href{mailto:contact@gylmar.com}{\small contact@gylmar.com}\endgroup\\
 \hspace*{0pt} \hfill \begingroup\hypersetup{hidelinks}
 \href{tel:+13479210474}{\small (347) 921-0474}\endgroup
-\vspace{-.7cm}
+\vspace{-.5cm}
 
 \begin{description}
-    \item[\textsf{\fontfamily{ptm}\selectfont SUMMARY}] \hfill
+    \item[\textsf{\fontfamily{ptm}\selectfont SUMMARY}]
+        \hfill
         \vspace{-.3cm}
         \noindent\rule{\linewidth}{1.0pt}
-        Software engineer specializing in scalable backend architecture and
-        seamless client-side experiences through proven cross-functional
-        collaboration with Engineering, Product, Data, Security, and Quality
-        teams. Delivers data-driven systems with end-to-end metrics and
-        logging to provide actionable insights for monitoring
-        mission-critical services and tracking KPIs.
+        Software engineer with proven track record of bridging complex backend
+        systems to constrained low-latency consumer interfaces (biometrics,
+        handhelds, smart carts). Cross-functional collaborator with
+        Engineering, Product, Data, Security, and Quality teams that delivers
+        backward from customer stories for MVPs, system extensions, and system
+        scaling alike. Implements data-driven systems with end-to-end metrics
+        and monitoring across mission-critical services and tracking KPIs to
+        ensure operational excellence.
 
-    \item[\textsf{\fontfamily{ptm}\selectfont TECHNICAL SKILLS}] \hfill
+    \item[\textsf{\fontfamily{ptm}\selectfont WORK EXPERIENCE}]
+        \hfill
         \vspace{-.3cm}
         \rule{\linewidth}{1.0pt}
-        \vspace{.2cm}
-        \begin{tabularx}{\linewidth}{>{\arraybackslash}l|X}
+        \vspace{-.8cm}
+        \begin{description}
+
+        \item[Amazon - AWS]
+        \hfill
+        \textit{May 2022 - June 2024}
+        \vspace{-.1cm}
+        \begin{itemize}[leftmargin=*]
+            \item Led and mentored team to deliver an external service endpoint
+                  for Amazon One (\textit{AO}) Enterprise devices to perform
+                  secure badge-in through a seamless palm hover authentication
+                  for a customer pool managed on the AWS Console. It securely
+                  managed sensitive customer Palm Images, Biometric IDs, and
+                  Badge IDs between all internally-facing backend systems. The
+                  service scaled to handle 1000 TPS across 12 APIs while
+                  maintaining data integrity and confidentiality.
+
+            \item Led and mentored team to deliver a Kotlin-based Android App
+                  for Amazon One clients to seamlessly verify 21+ eligibility
+                  of a customer using a palm hover. Worked with product to
+                  devise a user workflow that fit device constraints between
+                  the off-the-shelf Android device framework and the custom AO
+                  device, collaborating with the AO device framework owners
+                  where needed. Extended data integrity and confidentiality
+                  from backend systems while maintaining a low-latency user
+                  experience between devices.
+
+            \item Collaborated across teams to add Starbucks Gift Card support
+                  to the Amazon One palm hover experience for fast checkout.
+                  Extended backend systems to map 3rd party identifiers, such
+                  as a Gift Card barcode, to internal biometric identifiers
+                  on-device through a secure API.
+
+        \end{itemize}
+
+        \vspace{-0.2cm}
+        \centerline{\rule{0.3\linewidth}{0.4pt}}
+        \vspace{-0.2cm}
+
+        \item[Amazon - Whole Foods Market]
+        \hfill
+        \textit{Sept 2018 - May 2022}
+        \vspace{-.1cm}
+        \begin{itemize}[leftmargin=*]
+            \item Drove \$40M in operational savings by developing and rolling
+                  out an Inventory Restocking application running on enterprise
+                  handheld scanners (Honeywell), enabling store associates to
+                  scan and submit store items to vendors for store
+                  replenishment. Launched an MVP in 10 pilot stores and scaled
+                  to over 500 WFM stores nationwide.
+
+            \item Architected and mentored team through extensions for the
+                  Inventory Restocking application to have it proactively
+                  suggest items to store associates. Negotiated new app
+                  workflow and API contracts with product and UX to deliver
+                  single and batch APIs to handle high event throughput to meet
+                  customer needs. Prioritized delivery to meet MVP and
+                  production rollout phases. Deployed background jobs that
+                  would scale to the processing of millions of item events
+                  daily at peak without impacting on-site store operations.
+
+            \item Led design and implementation of smart dashcart checkout
+                  to enable "Just Walk Out" shopping. Delivered a
+                  workflow solution triggered by a customer entering a
+                  'checkout zone' to auto-charge the customer and send email
+                  receipts upon store exit. Used serverless architecture to
+                  keep overhead at a minimum and enable monitoring via
+                  observable metrics.
+        \end{itemize}
+
+        \vspace{-0.2cm}
+        \centerline{\rule{0.3\linewidth}{0.4pt}}
+        \vspace{-0.1cm}
+
+        \item[Space and Naval Warfare Systems Command (SPAWAR) via SAIC]
+        \hfill
+        \vspace{-.1cm}
+        \textit{May 2017 - July 2018}
+        \begin{itemize}[leftmargin=*]
+            \item Engineered mission-critical infrastructure automation for v22
+                  Osprey support, securing data environments via dynamic Layer
+                  3 proxy routing and application firewalls. Reduced deployment
+                  friction while strictly adhering to defense-grade security
+                  standards.
+        \end{itemize}
+
+        \end{description}
+
+    \item[\textsf{\fontfamily{ptm}\selectfont TECHNICAL SKILLS}]
+        \hfill
+        \vspace{-.3cm}
+        \rule{\linewidth}{1.0pt}
+        \par
+        \vspace{0.01cm}\noindent
+        \begin{tabularx}{\linewidth}{>{\arraybackslash}r|X}
             \multirow{1}{*}{Languages}
                 & Java, Kotlin, Python, Javascript
                   (\textit{TypeScript, NodeJs, AngularJs}), Bash \\
 
-            \multirow{1}{*}{\shortstack{Infra App\\Components}}
-                & \begin{tabular}{l|l|l}
+            \multirow{1}{*}[.5em]{\shortstack[r]{Infrastructure\\App Components}}
+                & $\left( \begin{tabular}{@{}l|l|l@{}}
                     Compute; \textit{EC2, Fargate, Lambda} &
                     Object Storage; \textit{S3} &
                     Infra Code; \textit{CDK, Ansible} \\
@@ -59,13 +156,14 @@
                     Events; \textit{SNS, KAFKA, RabbitMQ} &
                     Workflows; \textit{SWF} &
                     Networking; \textit{VPC}
-                  \end{tabular} \\
+                  \end{tabular} \right)$ \\
 
-            \multirow{2}{*}{\shortstack{Infra Support\\and Monitoring}}
-                & AWS Cloudwatch Service; \textit{Logs, Log Groups, Metrics,
-                  Alarms, Dashboards} \\
-                & Support Ticketing; Routing; \textit{Generation, Response,
-                  Management} \\
+            \multirow{1}{*}{\shortstack{Infra Monitoring}}
+                & AWS Cloudwatch Service; Structured Logs, Log Groups, Metrics,
+                 Alarms, Dashboards \\
+
+            \multirow{1}{*}{\shortstack{Infra Support}}
+                & Support Ticketing, Generation, Response, Runbooks\\
 
             \multirow{1}{*}{\shortstack{Dev Env}}
                 & Linux,
@@ -77,103 +175,20 @@
                   Regex \\
         \end{tabularx}
 
-    \item[\textsf{\fontfamily{ptm}\selectfont WORK EXPERIENCE}] \hfill \vspace{-.3cm}
-        \rule{\linewidth}{1.0pt}
-        \vspace{-.8cm}
-        \begin{description}
-        \item[Amazon - AWS] \hfill \textit{May 2022 - June 2024}
-        \begin{itemize}[leftmargin=*]
-            \item Led and mentored the team in delivering a public endpoint
-                  service for customer-facing Amazon One (\textit{AO})
-                  Enterprise Devices. The service efficiently managed high
-                  traffic while maintaining data integrity and
-                  confidentiality; it encrypted Palm Images, Biometric IDs,
-                  and Badge IDs through backend security measures, ensuring
-                  secure transmission, utilization, and modification of data
-                  across all internally-facing components. This allowed
-                  customers to use Corporate Badges stored in internal
-                  systems by simply hovering their palm over
-                  externally-facing Amazon devices.
-
-            \item Developed a Kotlin-based Android App for Amazon One clients
-                  to verify 21+ eligibility of a customer at stadiums using an
-                  external-facing AO device and an off-the-shelf Android
-                  device. Implemented HMAC encryption between wired devices
-                  to ensure data integrity and confidentiality when
-                  transmitting data received from a palm hover.
-
-            \item Extended the customer-facing AO Android App to support
-                  Starbucks gift card payments. Delivered this more generally
-                  by linking 3rd party data, such as a SBX barcode, to
-                  internal identifiers on-device through a secure API.
-
-        \end{itemize}
-
-        \item[Amazon - Whole Foods Market] \hfill \textit{Sept 2018 - May 2022}
-        \begin{itemize}[leftmargin=*]
-            \item Led the development and rollout of an Inventory Restocking
-                  application, launching an MVP in 10 pilot stores and scaling
-                  to over 500 WFM stores nationwide. Ensured smooth rollouts
-                  system-wide using feature flags and code pipelines. Designed
-                  end-to-end solutions to guide team implementations for
-                  efficiency, scale and maintenance, reaching millions of item
-                  events daily at peak. Delivered \$40M in annual savings
-                  through improved store operations.
-
-            \item Led design and implementation of two smart dashcart checkout
-                  processes to enable "Just Walk Out" shopping. Built AWS SWF
-                  workflows triggered at 'checkout zones' to auto-charge their
-                  account-linked credit card along with email receipt workflow
-                  confirmations upon store exit. Used serverless architecture
-                  to keep application overhead at a minimum and enable
-                  monitoring via observable metrics.
-        \end{itemize}
-
-        \item[Space and Naval Warfare Systems Command (SPAWAR) via SAIC] \hfill
-        \textit{May 2017 - July 2018}
-        \begin{itemize}[leftmargin=*]
-            \item Enhanced service deployment and network security for the v22
-                  Osprey data infrastructure by automating RedHat instance
-                  provisioning and network configuration with VMware and
-                  Ansible. Developed dynamic Layer 3 proxy routing and
-                  application firewalls, contributing to a more reliable and
-                  secure data environment.
-        \end{itemize}
-
-        \item[Comcast via Tureus] \hfill \textit{March 2017}
-        \begin{itemize}[leftmargin=*]
-            \item Developed an ETL pipeline to ingest parking meter data into
-                  PostgreSQL using Python microservices and Kafka topics.
-                  Designed flexible schemas with Alembic migrations to improve
-                  data accessibility and analysis.
-        \end{itemize}
-
-        \item[RetailOps] \hfill \textit{Feb 2013 - Dec 2016}
-        \begin{itemize}[leftmargin=*]
-            \item Delivered improvements to client data access by building and
-                  maintaining data pipelines and infrastructure. Key
-                  accomplishments include: real-time data integration from
-                  RabbitMQ to MongoDB, consolidating client data from their
-                  API's to MySQL, optimized media delivery with a NodeJS
-                  proxy, and enhanced client search capabilities through
-                  Elasticsearch.
-        \end{itemize}
-
-        \end{description}
-
-        \item[\textsf{\fontfamily{ptm}\selectfont EDUCATION}] \hfill
+        \item[\textsf{\fontfamily{ptm}\selectfont EDUCATION}]
+        \hfill
         \vspace{-.3cm}
         \rule{\linewidth}{1.0pt}
-        \vspace{.1cm}
+        \par
+        \vspace{0.01cm}\noindent
             \begin{tabularx}{\linewidth}{>{\arraybackslash}l|X}
             \multirow{2}{*}{
                 \shortstack{
-                    \textbf{University of California, San Diego} \\
-                    \textit{2008-2013}
+                    \textbf{University of California, San Diego}
                 }
             }
-                & B.S. Computer Science and Mathematics \\
-                & B.S. Computation \textit{specialization in Machine
+                & B.S. Joint Mathematics and Computer Science\\
+                & B.S. Cognitive Science \textit{with specialization in Machine
                   Learning and AI} \\
             \end{tabularx}
 
