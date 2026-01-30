@@ -4,10 +4,10 @@
 \usepackage{multirow, tabularx}
 \usepackage{enumitem}
 \usepackage[
-    top = 1.0cm,
-    bottom = 1.0cm,
-    left = 1.0cm,
-    right = 1.0cm
+    top = .6in,
+    bottom = .6in,
+    left = .5in,
+    right = .5in
 ]{geometry}
 
 \pagestyle{empty}
@@ -33,11 +33,10 @@
         \hfill
         \vspace{-.3cm}
         \noindent\rule{\linewidth}{1.0pt}
-        Software engineer with 6+ years experience of bridging complex backend
-        systems to constrained low-latency consumer interfaces, such as biometrics,
-        handhelds, and smart carts. Delivers customer-driven solutions from MVP
-        through production scale. Implements data-driven systems with end-to-end
-        observability across mission-critical services.
+        Backend engineer with 6+ years working on distributed systems
+        and elegant hardware-software integration. Architects scalable
+        APIs that power responsive, real-time experiences across
+        mobile, biometrics and retail devices.
 
     \item[\textsf{\fontfamily{ptm}\selectfont WORK EXPERIENCE}]
         \hfill
@@ -51,33 +50,28 @@
         \textit{2022 - 2024}
         \vspace{-.1cm}
         \begin{itemize}[leftmargin=*]
-            \item Led team to deliver an external service endpoint for Amazon
-                  One (\textit{AO}) Enterprise devices, enabling palm-based
-                  authentication for third-party enterprise clients using the
-                  AWS Console. Managed sensitive biometric data (Palm Images,
-                  Biometric IDs, Badge IDs) across internal systems while
-                  scaling to 1000 requests per second across 12 APIs.
+            \item Led team of 4 to deliver a public, idempotent 
+            REST API for Amazon One (\textit{AO}) Enterprise, enabling palm-based
+            authentication for third-party enterprise clients using the
+            AWS Console. Engineered high-performance Java service for securing
+            sensitive biometric data (Palm Images, Biometric IDs, Badge IDs)
+            via envelope encryption (AWS KMS). Achieved sub-200ms p99 latency
+            at 1000 transactions per second across 12 APIs.
 
-            \item Drove delivery of a Kotlin-based Android App
-                  for Amazon One clients to verify customer 21+ eligibility
-                  through a palm scan. Worked with product and
-                  the AO framework owners to devise a user workflow that fit
-                  device constraints of the off-the-shelf Android device
-                  framework and the custom AO device. For example, extended
-                  views and functionality on the AO device based on its
-                  connectivity status to the external device.
-
-            \item Collaborated across teams to add Starbucks Gift Card support
-                  to the Amazon One palm hover experience for fast checkout.
-                  Extended backend systems to map 3rd party identifiers, such
-                  as a Gift Card barcode, to internal biometric identifiers
-                  on-device through a secure API.
+            \item Drove team of 3 to deliver a native Android/Kotlin App
+            that integrates with Amazon One (\textit{AO}). It enabled clients
+            to verify customer 21+ eligibility through a palm scan. Architected
+            a resilient state machine on the AO device to handle complex backend
+            auth flows within the constrained Android UI, mitigating inconsistent
+            states caused by intermittent connectivity. 
+            
+            \item Collaborated across teams to add Starbucks gift card support
+            to the Amazon One palm hover experience for fast checkout.
+            Extended backend systems to map 3rd party identifiers, such
+            as a Gift Card barcode, to internal biometric identifiers
+            on-device through a secure API.
 
         \end{itemize}
-
-        \vspace{-0.1cm}
-        \centerline{\rule{0.3\linewidth}{0.4pt}}
-        \vspace{-0.1cm}
 
         \item[Amazon - Whole Foods Market]
         \hfill
@@ -85,48 +79,66 @@
         \vspace{-.1cm}
         \begin{itemize}[leftmargin=*]
             \item Drove \$40M in operational savings by developing and rolling
-                  out an Inventory Restocking application running on
-                  commercial-grade handheld scanners (Honeywell), enabling
-                  store associates to scan and submit forecasted item
-                  quantities to vendors for replenishment. Launched an MVP in
-                  10 pilot locations and scaled to 500+ physical stores
-                  nationwide. This was the first technical collaboration
-                  between Amazon and Whole Foods post-acquisition.
+            out an Inventory Restocking mobile web application running on 
+            commercial-grade handheld scanners (Honeywell), enabling
+            store associates to scan and submit forecasted item
+            quantities to vendors for replenishment. Launched an MVP in 10
+            pilot locations and scaled to 500+ physical stores nationwide.
 
-            \item Architected and mentored team through extensions for the
-                  Inventory Restocking application to have it proactively
-                  suggest items to store associates based on a stream of
-                  item forecasting events. Negotiated new app workflow and API
-                  contracts with product and UX, prioritizing delivery
-                  across MVP and production phases while scaling to millions
-                  of events daily without impacting store operations.
+            \item Spearheaded event-driven architecture for real-time inventory
+            suggestions, via SNS-based forecasting. Built resilience using SQS
+            and parallel Lambda instances, implementing time-zone aware
+            prioritization to guarantee 100\% on-time delivery of inventory
+            lists managed in DynamoDB for nationwide store replenishment.
 
-            \item Led design and implementation of smart dashcart checkout
-                  for "Just Walk Out" shopping. Delivered a
-                  workflow solution that auto-charged an account when
-                  customers entered a 'checkout zone' and emailed
-                  receipts upon store exit. Used serverless architecture to
-                  keep overhead at a minimum while maintaining app
-                  monitoring via observable metrics.
+            \item Architected and delivered idempotent batch APIs and backend
+            jobs that improved action latency by 90\%. Optimized payload sizes
+            and reduced network overhead by having batch APIs process store
+            section IDs rather than individual item IDs, improving background job
+            initiation latency. This ensured responsive UI interactions in
+            high-latency store environments, scaling to millions of items
+            processed daily.
+
+            \item Led design and implementation of Dash Cart Checkout
+            for "Just Walk Out" shopping. Delivered a
+            workflow solution that auto-charged an account when
+            customers entered a 'checkout zone' and emailed
+            receipts upon store exit. Built serverless workflow using AWS SWF to
+            keep state management at a minimum while maintaining app
+            monitoring via observable metrics.
         \end{itemize}
-
-        \vspace{-0.1cm}
-        \centerline{\rule{0.3\linewidth}{0.4pt}}
-        \vspace{-0.1cm}
 
         \item[SPAWAR (US Navy)]
         \hfill
         \vspace{-.1cm}
         \textit{2017 - 2018}
         \begin{itemize}[leftmargin=*]
-            \item Engineered mission-critical infrastructure automation for v22
-                  Osprey support, securing data environments via dynamic Layer
-                  3 proxy routing and application firewalls. Reduced deployment
-                  friction while strictly adhering to defense-grade security
-                  standards.
+            \item Engineered infrastructure automation for Bell Boeing V22
+            Osprey Aircraft support, securing data environments via dynamic
+            Layer 3 proxy routing and application firewalls. Reduced
+            deployment friction by automating a largely manual process
+            with Ansible, enabling lab technicians to continuously deploy to
+            a secured lab environment.
         \end{itemize}
 
     \end{description}
+
+    \item[\textsf{\fontfamily{ptm}\selectfont SKILLS}]
+        \hfill
+        \vspace{-.3cm}
+        \rule{\linewidth}{1.0pt}
+        \par
+        \vspace{0.01cm}\noindent
+        \begin{tabularx}{\linewidth}{@{}r|X}
+            \textbf{Engineering Domain} & Backend-for-Frontend (BFF), API Design, Distributed Systems, Mobile Systems Design\\
+            \textbf{Programming Languages} & Java, Kotlin (Android), Python, Javascript (TypeScript, NodeJs), SQL, Bash/Zsh \\
+            \textbf{Compute \& Containers} & AWS Lambda, Fargate, EC2, Kubernetes (EKS), Docker \\
+            \textbf{Data \& Storage} & DynamoDB, PostgreSQL, MongoDB, Redis, S3, Redshift \\
+            \textbf{Events \& Messaging} & Kafka, SNS, SQS, RabbitMQ\\
+            \textbf{Infra as Code (IaC)} & AWS CDK, CloudFormation, Ansible\\
+            \textbf{Observability \& Metrics} & CloudWatch (Metrics, Dashboards, Alarms), Structured Logging, Distributed Tracing \\
+
+        \end{tabularx}
 
     \item[\textsf{\fontfamily{ptm}\selectfont EDUCATION}]
     \hfill
@@ -134,7 +146,7 @@
     \rule{\linewidth}{1.0pt}
     \par
     \vspace{0.01cm}\noindent
-        \begin{tabularx}{\linewidth}{>{\arraybackslash}l|X}
+        \begin{tabularx}{\linewidth}{@{}l|X}
         \multirow{2}{*}{
             \shortstack{
                 \textbf{University of California, San Diego}
@@ -145,41 +157,6 @@
                 Learning and AI} \\
         \end{tabularx}
 
-    \item[\textsf{\fontfamily{ptm}\selectfont SKILLS}]
-        \hfill
-        \vspace{-.3cm}
-        \rule{\linewidth}{1.0pt}
-        \par
-        \vspace{0.01cm}\noindent
-        \begin{tabularx}{\linewidth}{@{}r|X}
-            \multirow{1}{*}{\shortstack[r]{Solutions}}
-                & MVPs, Product Extensions, Full-Scale Performance Optimizations\\
-            \multirow{1}{*}{\shortstack[r]{Collaborator}}
-                & Engineering, Product, UX, Data and Quality Teams\\
-            \multirow{1}{*}{Languages}
-                & Java, Kotlin, Python, Javascript
-                  (\textit{TypeScript, NodeJs, AngularJs}), Bash/Zsh (Linux CLI), Español \\
-
-            \multirow{1}{*}[.3em]{\shortstack[r]{Infrastructure}}
-                & $\left( \begin{tabular}{@{}l|l|l@{}}
-                    Compute; \textit{EC2, Fargate, Lambda, k8s, Docker} &
-                    Object Storage; \textit{S3} &
-                    IaC; \textit{CDK, Ansible} \\
-                    Database; \textit{DynamoDB, PostgreSQL} &
-                    Warehousing; \textit{Redshift, MongoDb} &
-                    DNS; \textit{Route 53} \\
-                    Events; \textit{SQS, SNS, KAFKA, RabbitMQ} &
-                    Workflows; \textit{SWF} &
-                    Networking; \textit{VPC}
-                  \end{tabular} \right)$ \\
-
-            \multirow{1}{*}{\shortstack[r]{Operations}}
-                & E2E Structured Logs, Log Groups, Metrics, Alarms and Dashboards for app monitoring and KPIs\\
-
-            \multirow{1}{*}{\shortstack{Support}}
-                & Incident Management via Runbooks, Ticketing Instrumentation and Escalation Response\\
-
-        \end{tabularx}
 
 \end{description}
 \end{document}
