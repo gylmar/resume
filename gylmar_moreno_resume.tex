@@ -1,6 +1,5 @@
 \documentclass[11pt]{article}
 \usepackage{hyperref}
-\usepackage{amsmath}
 \usepackage{multirow, tabularx}
 \usepackage{enumitem}
 \usepackage[
@@ -13,43 +12,45 @@
 \pagestyle{empty}
 \renewcommand{\familydefault}{\sfdefault}
 
-\setlist[itemize]{leftmargin=0pt}
+\setlist[itemize]{leftmargin=*, topsep=0pt, itemsep=3pt, parsep=1pt, partopsep=0pt}
 \setlist[enumerate]{leftmargin=0pt}
-\setlist[description]{leftmargin=0pt}
+\setlist[description]{leftmargin=0pt, topsep=0pt, itemsep=3pt, parsep=1pt, partopsep=1pt}
 
-\usepackage[usenames, dvipsnames]{xcolor}
+\newcommand{\sectionlabel}[1]{\textsf{\fontfamily{ptm}\selectfont #1}}
+\newcommand{\resumesection}[1]{%
+    \item[\sectionlabel{#1}]%
+    \hfill
+    \par\nobreak\nointerlineskip
+    \vspace{2pt}
+    \noindent\rule{\linewidth}{1.0pt}\par
+    \smallskip
+}
+\newcommand{\jobheading}[2]{%
+    \item[#1]%
+    \hfill
+    \textit{#2}\par
+}
 
 \begin{document}
 \noindent
-{\LARGE \textsf{\fontfamily{ptm}\selectfont \textbf{Gylmar Moreno}}}
+{\LARGE \sectionlabel{\textbf{Gylmar Moreno}}}
 \hfill \begingroup\hypersetup{hidelinks}
 \href{mailto:contact@gylmar.com}{\small contact@gylmar.com}\endgroup\\
 \hspace*{0pt} \hfill \begingroup\hypersetup{hidelinks}
 \href{tel:+13479210474}{\small (347) 921-0474}\endgroup
-\vspace{-.5cm}
 
 \begin{description}
-    \item[\textsf{\fontfamily{ptm}\selectfont SUMMARY}]
-        \hfill
-        \vspace{-.3cm}
-        \noindent\rule{\linewidth}{1.0pt}
+    \resumesection{SUMMARY}
         Full-lifecycle Software Engineer with 6+ years bridging distributed
         backends to constrained consumer devices --- web, biometrics, handhelds, and
         smart carts. Ships observable, CI/CD-driven solutions from MVP to
         production scale.
 
-    \item[\textsf{\fontfamily{ptm}\selectfont WORK EXPERIENCE}]
-        \hfill
-        \vspace{-.3cm}
-        \rule{\linewidth}{1.0pt}
-        \vspace{-.8cm}
+    \resumesection{WORK EXPERIENCE}
         \begin{description}
 
-        \item[Amazon - AWS]
-        \hfill
-        \textit{2022 - 2024}
-        \vspace{-.1cm}
-        \begin{itemize}[leftmargin=*]
+        \jobheading{Amazon - AWS}{2022 - 2024}
+        \begin{itemize}
             \item Led team to deliver a public, idempotent
             REST API for third-party enterprise identity verification using
             palm hover as input (Amazon One
@@ -72,11 +73,8 @@
             verification.
         \end{itemize}
 
-        \item[Amazon - Whole Foods Market]
-        \hfill
-        \textit{2018 - 2022}
-        \vspace{-.1cm}
-        \begin{itemize}[leftmargin=*]
+        \jobheading{Amazon - Whole Foods Market}{2018 - 2022}
+        \begin{itemize}
             \item Drove \$40M in operational savings by delivering an
             Inventory Restocking web app for commercial-grade handheld scanners
             (Honeywell). Launched the MVP in 10 pilot locations and scaled to
@@ -105,11 +103,8 @@
             experience for Whole Foods smart-cart customers.
         \end{itemize}
 
-        \item[SPAWAR (US Navy)]
-        \hfill
-        \vspace{-.1cm}
-        \textit{2017 - 2018}
-        \begin{itemize}[leftmargin=*]
+        \jobheading{SPAWAR (US Navy)}{2017 - 2018}
+        \begin{itemize}
             \item Engineered infrastructure automation for Bell Boeing V22
             Osprey Aircraft support systems. Created Ansible-driven deployment
             scripts to configure hosts as highly secured environments,
@@ -120,12 +115,9 @@
 
     \end{description}
 
-    \item[\textsf{\fontfamily{ptm}\selectfont EDUCATION}]
-    \hfill
-    \vspace{-.3cm}
-    \rule{\linewidth}{1.0pt}
+    \resumesection{EDUCATION}
     \par
-    \vspace{0.01cm}\noindent
+    \noindent
         \begin{tabularx}{\linewidth}{@{}l|X}
         \multirow{2}{*}{
             \shortstack{
@@ -137,12 +129,9 @@
                 Learning and AI} \\
         \end{tabularx}
 
-    \item[\textsf{\fontfamily{ptm}\selectfont SKILLS}]
-        \hfill
-        \vspace{-.3cm}
-        \rule{\linewidth}{1.0pt}
+    \resumesection{SKILLS}
         \par
-        \vspace{0.01cm}\noindent
+        \noindent
         \begin{tabularx}{\linewidth}{@{}r|X}
             \textbf{Engineering Domain} & Distributed Systems, API Design, Backend-for-Frontend (BFF), Mobile Systems Design\\
             \textbf{Programming Languages} & Java, Kotlin (Android), Python, JavaScript (TypeScript, Node.js), SQL, Bash/Zsh \\
